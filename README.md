@@ -1,0 +1,1 @@
+Start exploring from the [Wiki](https://gl.kwarc.info/katjabercic/meta-cmo-survey/wikis/Overview).
