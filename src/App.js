@@ -22,10 +22,14 @@ const getAuthors = (collectionId) => {
     }).map((ca) => {
         return db.author.filter((a) => { return a.id === ca.a_id; })[0]
     })
-    console.log(authors);
     authors = authors.sort(compare);
-    console.log(authors);
-    return authors
+    return authors;
+}
+
+const boolString = (value) => {
+    if (value === null) return "";
+    else if (value > 0) return "yes";
+    else return "no";
 }
 
 class App extends Component {
@@ -39,19 +43,32 @@ class App extends Component {
             accessor: 'name',
             Cell: props => <CollectionName text={props.value.text} url={props.value.url} />
         }, {
+            Header: 'Published?',
+            accessor: 'published'
+        }, {
+            Header: 'Type of objects',
+            accessor: 'object_type'
+        }, {
             Header: '# of objects',
             accessor: 'size'
         }, {
             Header: 'Author(s)',
             accessor: 'authors',
             Cell: props => <Authors data={props.value} />
+        }, {
+            Header: 'Irredundant?',
+            accessor: 'irredundant',
+            Cell: props => {boolString(props.value)}
         }]
 
         const data = db.collection.map((c) => {
             return {
                 name: {text: c.name, url: c.url},
+                published: c.published,
+                object_type: c.object_type,
                 authors: getAuthors(c.id),
-                size: c.size
+                size: c.size,
+                irredundant: c.irredundant
             }
         })
 
@@ -68,11 +85,12 @@ function CollectionName(props) {
 }
 
 function Authors(props) {
-   return(
-       <React.Fragment>
-       {props.data.map((a, i) => <React.Fragment key={i}>{!!i && ", "} <Author data={a} /></React.Fragment> )}
-       </React.Fragment>
-   ); 
+    if ((typeof props.data !== 'undefined')) return(
+        <React.Fragment>
+            {props.data.map((a, i) => <React.Fragment key={i}>{!!i && ", "} <Author data={a} /></React.Fragment> )}
+        </React.Fragment>
+    );
+    else return null;
 }
 
 function Author(props) {
