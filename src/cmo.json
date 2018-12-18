@@ -1,16 +1,16 @@
 {
   "sqlite_sequence": [
     {
-      "name": "author",
-      "seq": 11
-    },
-    {
       "name": "collection_author",
-      "seq": 17
+      "seq": 30
     },
     {
       "name": "collection",
-      "seq": 9
+      "seq": 20
+    },
+    {
+      "name": "author",
+      "seq": 24
     }
   ],
   "collection_author": [
@@ -98,6 +98,313 @@
       "id": 17,
       "c_id": 8,
       "a_id": 9
+    },
+    {
+      "id": 18,
+      "c_id": 10,
+      "a_id": 12
+    },
+    {
+      "id": 19,
+      "c_id": 10,
+      "a_id": 13
+    },
+    {
+      "id": 20,
+      "c_id": 11,
+      "a_id": 14
+    },
+    {
+      "id": 21,
+      "c_id": 12,
+      "a_id": 14
+    },
+    {
+      "id": 22,
+      "c_id": 13,
+      "a_id": 15
+    },
+    {
+      "id": 23,
+      "c_id": 13,
+      "a_id": 16
+    },
+    {
+      "id": 24,
+      "c_id": 14,
+      "a_id": 17
+    },
+    {
+      "id": 25,
+      "c_id": 16,
+      "a_id": 19
+    },
+    {
+      "id": 26,
+      "c_id": 17,
+      "a_id": 20
+    },
+    {
+      "id": 27,
+      "c_id": 17,
+      "a_id": 21
+    },
+    {
+      "id": 28,
+      "c_id": 18,
+      "a_id": 22
+    },
+    {
+      "id": 29,
+      "c_id": 19,
+      "a_id": 23
+    },
+    {
+      "id": 30,
+      "c_id": 19,
+      "a_id": 24
+    }
+  ],
+  "collection": [
+    {
+      "id": 1,
+      "name": "Atlas of Abstract Regular Polytopes for Small Almost Simple Groups",
+      "url": "https://www.math.auckland.ac.nz/~dleemans/polytopes/",
+      "object_type": "maniplex",
+      "size": 5354,
+      "published": "10.1007/s00010-006-2843-9",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 2,
+      "name": "Atlas of Small Regular Polytopes",
+      "url": "http://www.abstract-polytopes.com/",
+      "object_type": "maniplex",
+      "size": 35970,
+      "published": "10.1007/s10998-006-0028-x",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 3,
+      "name": "Atlas of Chiral Polytopes for Small Almost Simple Groups",
+      "url": "http://homepages.ulb.ac.be/~dleemans/CHIRAL/index.html",
+      "object_type": "maniplex",
+      "size": 19212,
+      "published": "https://amc-journal.eu/index.php/amc/article/view/204/192",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 4,
+      "name": "Atlas of Small Chiral Polytopes",
+      "url": "http://www.abstract-polytopes.com/chiral/",
+      "object_type": "maniplex",
+      "size": 56,
+      "published": "https://amc-journal.eu/index.php/amc/article/view/204/192",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 5,
+      "name": "Polytopes Derived from Sporadic Simple Groups",
+      "url": "http://www.dr-mikes-maths.com/sporpolys/",
+      "object_type": "maniplex",
+      "size": 6047,
+      "published": "https://www.researchgate.net/publication/260908716_Polytopes_Derived_from_Sporadic_Simple_Groups",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 6,
+      "name": "Atlas of Subgroup Lattices of Finite Almost Simple Groups",
+      "url": "http://homepages.ulb.ac.be/~dleemans/atlaslat/",
+      "object_type": "lattice",
+      "size": 140,
+      "published": "10.26493/1855-3974.455.422",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 7,
+      "name": "Unlabeled lattices on <=15 nodes",
+      "url": "https://www.shsu.edu/mem037/Lattices.html",
+      "object_type": "lattice",
+      "size": 171432956,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 8,
+      "name": "Lists of finite lattices (modular, semimodular, graded and geometric)",
+      "url": "https://b2share.eudat.eu/records/dbb096da4e364b5e9e37b982431f41de",
+      "object_type": "lattice",
+      "size": null,
+      "published": null,
+      "provenance": "https://b2share.eudat.eu/api/files/7794ba17-08ef-4d9a-b35f-4ef6e524b982/00README.txt",
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 9,
+      "name": "Census of Edge-Transitive Tetravalent Graphs",
+      "url": "http://jan.ucc.nau.edu/~swilson/C4FullSite/index.html",
+      "object_type": "graph",
+      "size": 7364,
+      "published": "https://arxiv.org/abs/1608.04158",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 10,
+      "name": "An Atlas of Graphs",
+      "url": null,
+      "object_type": "graph",
+      "size": null,
+      "published": "ISBN:0198526504",
+      "provenance": null,
+      "comment": "book",
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 11,
+      "name": "Simple k-Angulations",
+      "url": "http://www.jooyandeh.com/Combinatorics/Data/K-Angulations.aspx",
+      "object_type": "graph",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 12,
+      "name": "Planar Hypohamiltonian Graphs",
+      "url": "http://www.jooyandeh.com/Combinatorics/Data/PlanarHypohamiltonian.aspx",
+      "object_type": "graph",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 13,
+      "name": "A Database of Graphs in Combinatorica Format",
+      "url": "http://www3.cs.stonybrook.edu/~skiena/combinatorica/graphs/",
+      "object_type": "graph",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 14,
+      "name": "Regular Graphs",
+      "url": "http://www.mathe2.uni-bayreuth.de/markus/reggraphs.html",
+      "object_type": "graph",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 15,
+      "name": "Strongly Regular Graphs on at most 64 vertices",
+      "url": "http://www.maths.gla.ac.uk/~es/srgraphs.php",
+      "object_type": "graph",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 16,
+      "name": "Atlas of primitive geometries of rank 2 for sporadic groups",
+      "url": "https://data.adam-journal.eu/apg/",
+      "object_type": "geometry",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 17,
+      "name": "Classification of association schemes with small vertices",
+      "url": "http://math.shinshu-u.ac.jp/~hanaki/as/",
+      "object_type": "association scheme",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 18,
+      "name": "Encyclopedia of Quadri-Figures",
+      "url": "https://chrisvantienhoven.nl/mathematics/encyclopedia",
+      "object_type": "quadri-figure",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 19,
+      "name": "A database of Galois polynomials",
+      "url": "http://pari.math.u-bordeaux.fr/galpol/",
+      "object_type": "Galois polynomial",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 20,
+      "name": "The Knot Atlas",
+      "url": "http://katlas.org/wiki/Main_Page",
+      "object_type": "knot",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
     }
   ],
   "author": [
@@ -166,125 +473,84 @@
       "surname": "Wilson",
       "name": "Steve",
       "url": "http://jan.ucc.nau.edu/~swilson/"
-    }
-  ],
-  "collection": [
-    {
-      "id": 1,
-      "name": "Atlas of Abstract Regular Polytopes for Small Almost Simple Groups",
-      "url": "https://www.math.auckland.ac.nz/~dleemans/polytopes/",
-      "object_type": "maniplex",
-      "has_fingerprint": 1,
-      "size": 5354,
-      "published": "10.1007/s00010-006-2843-9",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
     },
     {
-      "id": 2,
-      "name": "Atlas of Small Regular Polytopes",
-      "url": "http://www.abstract-polytopes.com/",
-      "object_type": "maniplex",
-      "has_fingerprint": 1,
-      "size": 35970,
-      "published": "10.1007/s10998-006-0028-x",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 12,
+      "surname": "Read",
+      "name": "Ronald",
+      "url": null
     },
     {
-      "id": 3,
-      "name": "Atlas of Chiral Polytopes for Small Almost Simple Groups",
-      "url": "http://homepages.ulb.ac.be/~dleemans/CHIRAL/index.html",
-      "object_type": "maniplex",
-      "has_fingerprint": 1,
-      "size": 19212,
-      "published": "https://amc-journal.eu/index.php/amc/article/view/204/192",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 13,
+      "surname": "Wilson",
+      "name": "Robin",
+      "url": null
     },
     {
-      "id": 4,
-      "name": "Atlas of Small Chiral Polytopes",
-      "url": "http://www.abstract-polytopes.com/chiral/",
-      "object_type": "maniplex",
-      "has_fingerprint": 1,
-      "size": 56,
-      "published": "https://amc-journal.eu/index.php/amc/article/view/204/192",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 14,
+      "surname": "Jooyandeh",
+      "name": "Reza",
+      "url": null
     },
     {
-      "id": 5,
-      "name": "Polytopes Derived from Sporadic Simple Groups",
-      "url": "http://www.dr-mikes-maths.com/sporpolys/",
-      "object_type": "maniplex",
-      "has_fingerprint": 1,
-      "size": 6047,
-      "published": "https://www.researchgate.net/publication/260908716_Polytopes_Derived_from_Sporadic_Simple_Groups",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 15,
+      "surname": "Pemmaraju",
+      "name": "Sriram",
+      "url": null
     },
     {
-      "id": 6,
-      "name": "Atlas of Subgroup Lattices of Finite Almost Simple Groups",
-      "url": "http://homepages.ulb.ac.be/~dleemans/atlaslat/",
-      "object_type": "lattice",
-      "has_fingerprint": 1,
-      "size": 140,
-      "published": "10.26493/1855-3974.455.422",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 16,
+      "surname": "Skiena",
+      "name": "Steven",
+      "url": null
     },
     {
-      "id": 7,
-      "name": "Unlabeled lattices on <=15 nodes",
-      "url": "https://www.shsu.edu/mem037/Lattices.html",
-      "object_type": "lattice",
-      "has_fingerprint": 1,
-      "size": 171432956,
-      "published": null,
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 17,
+      "surname": "Meringer",
+      "name": "Markus",
+      "url": null
     },
     {
-      "id": 8,
-      "name": "Lists of finite lattices (modular, semimodular, graded and geometric)",
-      "url": "https://b2share.eudat.eu/records/dbb096da4e364b5e9e37b982431f41de",
-      "object_type": "lattice",
-      "has_fingerprint": 1,
-      "size": null,
-      "published": null,
-      "provenance": "https://b2share.eudat.eu/api/files/7794ba17-08ef-4d9a-b35f-4ef6e524b982/00README.txt",
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 18,
+      "surname": "Spence",
+      "name": "Ted",
+      "url": null
     },
     {
-      "id": 9,
-      "name": "Census of Edge-Transitive Tetravalent Graphs",
-      "url": "http://jan.ucc.nau.edu/~swilson/C4FullSite/index.html",
-      "object_type": "graph",
-      "has_fingerprint": 1,
-      "size": 7364,
-      "published": "https://arxiv.org/abs/1608.04158",
-      "provenance": null,
-      "comment": null,
-      "complete": null,
-      "irredundant": null
+      "id": 19,
+      "surname": "Rodrigues",
+      "name": "Bernardo",
+      "url": null
+    },
+    {
+      "id": 20,
+      "surname": "Miyamoto",
+      "name": "Izumi",
+      "url": null
+    },
+    {
+      "id": 21,
+      "surname": "Hanaki",
+      "name": "Akihide",
+      "url": null
+    },
+    {
+      "id": 22,
+      "surname": "van Tienhoven",
+      "name": "Chris",
+      "url": null
+    },
+    {
+      "id": 23,
+      "surname": "Allombert",
+      "name": "Bill",
+      "url": null
+    },
+    {
+      "id": 24,
+      "surname": "Schein",
+      "name": "Igor",
+      "url": null
     }
   ]
 }

@@ -59,6 +59,9 @@ class App extends Component {
             Header: 'Irredundant?',
             accessor: 'irredundant',
             Cell: props => {boolString(props.value)}
+        }, {
+            Header: 'Comment',
+            accessor: 'comment'
         }]
 
         const data = db.collection.map((c) => {
@@ -68,7 +71,8 @@ class App extends Component {
                 object_type: c.object_type,
                 authors: getAuthors(c.id),
                 size: c.size,
-                irredundant: c.irredundant
+                irredundant: c.irredundant,
+                comment: c.comment
             }
         })
 
