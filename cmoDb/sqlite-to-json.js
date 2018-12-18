@@ -5,7 +5,7 @@ const exporter = new SqliteToJson({
 });
 exporter.all(function (err, all) {
     var fs = require('fs');
-    fs.writeFile("../cmo.json", JSON.stringify(all), function(err) {
+    fs.writeFile("../cmo.json", JSON.stringify(all, null, 2), function(err) {
         if(err) { return console.log(err); }
         console.log("The file was saved!");
     });

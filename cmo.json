@@ -1,0 +1,290 @@
+{
+  "sqlite_sequence": [
+    {
+      "name": "author",
+      "seq": 11
+    },
+    {
+      "name": "collection_author",
+      "seq": 17
+    },
+    {
+      "name": "collection",
+      "seq": 9
+    }
+  ],
+  "collection_author": [
+    {
+      "id": 1,
+      "c_id": 1,
+      "a_id": 1
+    },
+    {
+      "id": 2,
+      "c_id": 1,
+      "a_id": 2
+    },
+    {
+      "id": 3,
+      "c_id": 2,
+      "a_id": 3
+    },
+    {
+      "id": 4,
+      "c_id": 3,
+      "a_id": 2
+    },
+    {
+      "id": 5,
+      "c_id": 3,
+      "a_id": 3
+    },
+    {
+      "id": 6,
+      "c_id": 3,
+      "a_id": 4
+    },
+    {
+      "id": 7,
+      "c_id": 4,
+      "a_id": 2
+    },
+    {
+      "id": 8,
+      "c_id": 4,
+      "a_id": 3
+    },
+    {
+      "id": 9,
+      "c_id": 4,
+      "a_id": 4
+    },
+    {
+      "id": 10,
+      "c_id": 5,
+      "a_id": 3
+    },
+    {
+      "id": 11,
+      "c_id": 5,
+      "a_id": 5
+    },
+    {
+      "id": 12,
+      "c_id": 6,
+      "a_id": 2
+    },
+    {
+      "id": 13,
+      "c_id": 6,
+      "a_id": 6
+    },
+    {
+      "id": 14,
+      "c_id": 7,
+      "a_id": 7
+    },
+    {
+      "id": 15,
+      "c_id": 9,
+      "a_id": 10
+    },
+    {
+      "id": 16,
+      "c_id": 9,
+      "a_id": 11
+    },
+    {
+      "id": 17,
+      "c_id": 8,
+      "a_id": 9
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "surname": "Vauthier",
+      "name": "Laurence",
+      "url": null
+    },
+    {
+      "id": 2,
+      "surname": "Leemans",
+      "name": "Dimitri",
+      "url": "http://homepages.ulb.ac.be/~dleemans/"
+    },
+    {
+      "id": 3,
+      "surname": "Hartley",
+      "name": "Michael",
+      "url": "http://dr-mikes-maths.com/maths.html"
+    },
+    {
+      "id": 4,
+      "surname": "Hubard",
+      "name": "Isabel",
+      "url": "https://www.matem.unam.mx/fsd/hubard"
+    },
+    {
+      "id": 5,
+      "surname": "Hulpke",
+      "name": "Alexander",
+      "url": "http://www.math.colostate.edu/~hulpke/"
+    },
+    {
+      "id": 6,
+      "surname": "Connor",
+      "name": "Thomas",
+      "url": null
+    },
+    {
+      "id": 7,
+      "surname": "Malandro",
+      "name": "Martin",
+      "url": "https://www.shsu.edu/mem037/"
+    },
+    {
+      "id": 8,
+      "surname": "Jipsen",
+      "name": "Peter",
+      "url": "http://www1.chapman.edu/~jipsen/"
+    },
+    {
+      "id": 9,
+      "surname": "Kohonen",
+      "name": "Jukka",
+      "url": ""
+    },
+    {
+      "id": 10,
+      "surname": "Potočnik",
+      "name": "Primož",
+      "url": "https://www.fmf.uni-lj.si/~potocnik/work.htm"
+    },
+    {
+      "id": 11,
+      "surname": "Wilson",
+      "name": "Steve",
+      "url": "http://jan.ucc.nau.edu/~swilson/"
+    }
+  ],
+  "collection": [
+    {
+      "id": 1,
+      "name": "Atlas of Abstract Regular Polytopes for Small Almost Simple Groups",
+      "url": "https://www.math.auckland.ac.nz/~dleemans/polytopes/",
+      "object_type": "maniplex",
+      "has_fingerprint": 1,
+      "size": 5354,
+      "published": "10.1007/s00010-006-2843-9",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 2,
+      "name": "Atlas of Small Regular Polytopes",
+      "url": "http://www.abstract-polytopes.com/",
+      "object_type": "maniplex",
+      "has_fingerprint": 1,
+      "size": 35970,
+      "published": "10.1007/s10998-006-0028-x",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 3,
+      "name": "Atlas of Chiral Polytopes for Small Almost Simple Groups",
+      "url": "http://homepages.ulb.ac.be/~dleemans/CHIRAL/index.html",
+      "object_type": "maniplex",
+      "has_fingerprint": 1,
+      "size": 19212,
+      "published": "https://amc-journal.eu/index.php/amc/article/view/204/192",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 4,
+      "name": "Atlas of Small Chiral Polytopes",
+      "url": "http://www.abstract-polytopes.com/chiral/",
+      "object_type": "maniplex",
+      "has_fingerprint": 1,
+      "size": 56,
+      "published": "https://amc-journal.eu/index.php/amc/article/view/204/192",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 5,
+      "name": "Polytopes Derived from Sporadic Simple Groups",
+      "url": "http://www.dr-mikes-maths.com/sporpolys/",
+      "object_type": "maniplex",
+      "has_fingerprint": 1,
+      "size": 6047,
+      "published": "https://www.researchgate.net/publication/260908716_Polytopes_Derived_from_Sporadic_Simple_Groups",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 6,
+      "name": "Atlas of Subgroup Lattices of Finite Almost Simple Groups",
+      "url": "http://homepages.ulb.ac.be/~dleemans/atlaslat/",
+      "object_type": "lattice",
+      "has_fingerprint": 1,
+      "size": 140,
+      "published": "10.26493/1855-3974.455.422",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 7,
+      "name": "Unlabeled lattices on <=15 nodes",
+      "url": "https://www.shsu.edu/mem037/Lattices.html",
+      "object_type": "lattice",
+      "has_fingerprint": 1,
+      "size": 171432956,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 8,
+      "name": "Lists of finite lattices (modular, semimodular, graded and geometric)",
+      "url": "https://b2share.eudat.eu/records/dbb096da4e364b5e9e37b982431f41de",
+      "object_type": "lattice",
+      "has_fingerprint": 1,
+      "size": null,
+      "published": null,
+      "provenance": "https://b2share.eudat.eu/api/files/7794ba17-08ef-4d9a-b35f-4ef6e524b982/00README.txt",
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    },
+    {
+      "id": 9,
+      "name": "Census of Edge-Transitive Tetravalent Graphs",
+      "url": "http://jan.ucc.nau.edu/~swilson/C4FullSite/index.html",
+      "object_type": "graph",
+      "has_fingerprint": 1,
+      "size": 7364,
+      "published": "https://arxiv.org/abs/1608.04158",
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null
+    }
+  ]
+}
