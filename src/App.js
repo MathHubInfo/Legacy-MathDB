@@ -4,11 +4,28 @@ import './App.css';
 import db from './cmo.json';
 
 const getAuthors = (collectionId) => {
-    return db.collection_author.filter((ca) => { 
+    
+    function compare(a, b) {
+        const surnameA = a.surname.toUpperCase();
+        const surnameB = b.surname.toUpperCase();
+        let comparison = 0;
+        if (surnameA > surnameB) {
+            comparison = 1;
+        } else if (surnameA < surnameB) {
+            comparison = -1;
+        }
+        return comparison;
+    }
+    
+    var authors = db.collection_author.filter((ca) => { 
         return ca.c_id === collectionId;
     }).map((ca) => {
         return db.author.filter((a) => { return a.id === ca.a_id; })[0]
     })
+    console.log(authors);
+    authors = authors.sort(compare);
+    console.log(authors);
+    return authors
 }
 
 class App extends Component {
@@ -51,7 +68,17 @@ function CollectionName(props) {
 }
 
 function Authors(props) {
-   return <span>a</span> 
+   return(
+       <React.Fragment>
+       {props.data.map((a, i) => <React.Fragment key={i}>{!!i && ", "} <Author data={a} /></React.Fragment> )}
+       </React.Fragment>
+   ); 
+}
+
+function Author(props) {
+    const fullname = props.data.name + " " + props.data.surname
+    if (!(props.data.url === null)) return <a href={props.data.url}>{fullname}</a>;
+    else return <span>{fullname}</span>
 }
 
 export default App;
