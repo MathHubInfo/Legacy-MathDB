@@ -2,11 +2,11 @@
   "sqlite_sequence": [
     {
       "name": "collection_author",
-      "seq": 45
+      "seq": 50
     },
     {
       "name": "author",
-      "seq": 40
+      "seq": 44
     },
     {
       "name": "database",
@@ -14,7 +14,7 @@
     },
     {
       "name": "collection",
-      "seq": 30
+      "seq": 32
     }
   ],
   "collection_author": [
@@ -242,6 +242,31 @@
       "id": 45,
       "c_id": 29,
       "a_id": 39
+    },
+    {
+      "id": 46,
+      "c_id": 31,
+      "a_id": 40
+    },
+    {
+      "id": 47,
+      "c_id": 31,
+      "a_id": 41
+    },
+    {
+      "id": 48,
+      "c_id": 32,
+      "a_id": 42
+    },
+    {
+      "id": 49,
+      "c_id": 32,
+      "a_id": 43
+    },
+    {
+      "id": 50,
+      "c_id": 32,
+      "a_id": 44
     }
   ],
   "author": [
@@ -481,8 +506,32 @@
     },
     {
       "id": 40,
-      "surname": "",
-      "name": "",
+      "surname": "Berčič",
+      "name": "Katja",
+      "url": null
+    },
+    {
+      "id": 41,
+      "surname": "Vidali",
+      "name": "Janoš",
+      "url": null
+    },
+    {
+      "id": 42,
+      "surname": "Besche",
+      "name": "Hans Ulrich",
+      "url": null
+    },
+    {
+      "id": 43,
+      "surname": "Eick",
+      "name": "Bettina",
+      "url": null
+    },
+    {
+      "id": 44,
+      "surname": "O'Brien",
+      "name": "Eamonn",
       "url": null
     }
   ],
@@ -1055,6 +1104,42 @@
       "id": 30,
       "name": "The SymbolicData Project",
       "url": "https://symbolicdata.github.io/",
+      "object_type": "",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "citable": null,
+      "collaborative": null,
+      "decentralised": null,
+      "interoperable": null,
+      "searchable": null,
+      "selfexplaining": null
+    },
+    {
+      "id": 31,
+      "name": "DiscreteZOO",
+      "url": "https://github.com/discretezoo",
+      "object_type": "",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "citable": null,
+      "collaborative": null,
+      "decentralised": null,
+      "interoperable": null,
+      "searchable": null,
+      "selfexplaining": null
+    },
+    {
+      "id": 32,
+      "name": "The Small Groups library",
+      "url": "http://www.icm.tu-bs.de/ag_algebra/software/small/",
       "object_type": "",
       "size": null,
       "published": null,
