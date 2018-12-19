@@ -56,9 +56,28 @@ class App extends Component {
             accessor: 'authors',
             Cell: props => <Authors data={props.value} />
         }, {
+            Header: 'Citable?',
+            accessor: 'citable',
+            Cell: props => {boolString(props.value)}
+        }, {
             Header: 'Irredundant?',
             accessor: 'irredundant',
             Cell: props => {boolString(props.value)}
+        }, {
+            Header: 'Collaborative',
+            accessor: 'collaborative'
+        }, {
+            Header: 'Decentralised',
+            accessor: 'decentralised'
+        }, {
+            Header: 'Interoperable',
+            accessor: 'interoperable'
+        }, {
+            Header: 'Searchable',
+            accessor: 'searchable'
+        }, {
+            Header: 'Self-explaining',
+            accessor: 'selfexplaining'
         }, {
             Header: 'Comment',
             accessor: 'comment'
@@ -69,9 +88,15 @@ class App extends Component {
                 name: {text: c.name, url: c.url},
                 published: c.published,
                 object_type: c.object_type,
-                authors: getAuthors(c.id),
                 size: c.size,
+                authors: getAuthors(c.id),
+                citable: c.citable,
                 irredundant: c.irredundant,
+                collaborative: c.collaborative,
+                decentralised: c.decentralised,
+                interoperable: c.interoperable,
+                searchable: c.searchable,
+                selfexplaining: c.selfexplaining,
                 comment: c.comment
             }
         })
