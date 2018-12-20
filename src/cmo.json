@@ -2,7 +2,7 @@
   "sqlite_sequence": [
     {
       "name": "collection_author",
-      "seq": 50
+      "seq": 51
     },
     {
       "name": "author",
@@ -267,6 +267,11 @@
       "id": 50,
       "c_id": 32,
       "a_id": 44
+    },
+    {
+      "id": 51,
+      "c_id": 16,
+      "a_id": 2
     }
   ],
   "author": [
