@@ -14,7 +14,7 @@
     },
     {
       "name": "collection",
-      "seq": 32
+      "seq": 33
     }
   ],
   "collection_author": [
@@ -1140,6 +1140,24 @@
       "id": 32,
       "name": "The Small Groups library",
       "url": "http://www.icm.tu-bs.de/ag_algebra/software/small/",
+      "object_type": "",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "citable": null,
+      "collaborative": null,
+      "decentralised": null,
+      "interoperable": null,
+      "searchable": null,
+      "selfexplaining": null
+    },
+    {
+      "id": 33,
+      "name": "\nThe On-Line Encyclopedia of Integer Sequences",
+      "url": "https://oeis.org/",
       "object_type": "",
       "size": null,
       "published": null,
