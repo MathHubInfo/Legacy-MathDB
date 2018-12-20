@@ -35,13 +35,11 @@ const boolString = (value) => {
 class App extends Component {
     
     render() {
-      
-        console.log(db);
 
         const columns = [{
             Header: 'Name',
             accessor: 'name',
-            Cell: props => <CollectionName text={props.value.text} url={props.value.url} />
+            Cell: props => <CollectionData text={props.value.text} url={props.value.url} authors={props.value.authors} />
         }, {
             Header: 'Published?',
             accessor: 'published'
@@ -51,10 +49,6 @@ class App extends Component {
         }, {
             Header: '# of objects',
             accessor: 'size'
-        }, {
-            Header: 'Author(s)',
-            accessor: 'authors',
-            Cell: props => <Authors data={props.value} />
         }, {
             Header: 'Citable?',
             accessor: 'citable',
@@ -82,14 +76,13 @@ class App extends Component {
             Header: 'Comment',
             accessor: 'comment'
         }]
-
+        
         const data = db.collection.map((c) => {
             return {
-                name: {text: c.name, url: c.url},
+                name: {text: c.name, url: c.url, authors: getAuthors(c.id)},
                 published: c.published,
                 object_type: c.object_type,
                 size: c.size,
-                authors: getAuthors(c.id),
                 citable: c.citable,
                 irredundant: c.irredundant,
                 collaborative: c.collaborative,
@@ -103,14 +96,19 @@ class App extends Component {
 
         return (
             <div className="App">
-                <ReactTable data={data} columns={columns} />
+                <ReactTable data={data} columns={columns} className={"-striped"} />
             </div>
         );
     }
 }
 
-function CollectionName(props) {
-    return <a href={props.url}>{props.text}</a>;
+function CollectionData(props) {
+    return(
+        <React.Fragment>
+            <a href={props.url}>{props.text}</a><br/>
+            <Authors data={props.authors} />
+        </React.Fragment>
+    );
 }
 
 function Authors(props) {
