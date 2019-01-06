@@ -37,48 +37,59 @@ class App extends Component {
     render() {
 
         const columns = [{
+            Header: '#',
+            accessor: 'index',
+            maxWidth: 40
+        }, {
             Header: 'Name',
             accessor: 'name',
             Cell: props => <CollectionData text={props.value.text} url={props.value.url} authors={props.value.authors} />
         }, {
             Header: 'Published?',
-            accessor: 'published'
+            accessor: 'published',
+            Cell: props => <Publication value={props.value} />,
+            maxWidth: 200
         }, {
             Header: 'Type of objects',
-            accessor: 'object_type'
+            accessor: 'object_type',
+            maxWidth: 200
         }, {
             Header: '# of objects',
-            accessor: 'size'
-        }, {
-            Header: 'Citable?',
-            accessor: 'citable',
-            Cell: props => {boolString(props.value)}
-        }, {
-            Header: 'Irredundant?',
-            accessor: 'irredundant',
-            Cell: props => {boolString(props.value)}
-        }, {
-            Header: 'Collaborative',
-            accessor: 'collaborative'
-        }, {
-            Header: 'Decentralised',
-            accessor: 'decentralised'
-        }, {
-            Header: 'Interoperable',
-            accessor: 'interoperable'
-        }, {
-            Header: 'Searchable',
-            accessor: 'searchable'
-        }, {
-            Header: 'Self-explaining',
-            accessor: 'selfexplaining'
+            accessor: 'size',
+            maxWidth: 100
         }, {
             Header: 'Comment',
             accessor: 'comment'
         }]
         
-        const data = db.collection.map((c) => {
+//        {
+//            Header: 'Citable?',
+//            accessor: 'citable',
+//            Cell: props => {boolString(props.value)}
+//        }, {
+//            Header: 'Irredundant?',
+//            accessor: 'irredundant',
+//            Cell: props => {boolString(props.value)}
+//        }, {
+//            Header: 'Collaborative',
+//            accessor: 'collaborative'
+//        }, {
+//            Header: 'Decentralised',
+//            accessor: 'decentralised'
+//        }, {
+//            Header: 'Interoperable',
+//            accessor: 'interoperable'
+//        }, {
+//            Header: 'Searchable',
+//            accessor: 'searchable'
+//        }, {
+//            Header: 'Self-explaining',
+//            accessor: 'selfexplaining'
+//        }, 
+        
+        const data = db.collection.map((c, i) => {
             return {
+                index: i + 1,
                 name: {text: c.name, url: c.url, authors: getAuthors(c.id)},
                 published: c.published,
                 object_type: c.object_type,
@@ -124,6 +135,28 @@ function Author(props) {
     const fullname = props.data.name + " " + props.data.surname
     if (!(props.data.url === null)) return <a href={props.data.url}>{fullname}</a>;
     else return <span>{fullname}</span>
+}
+
+function Publication(props) {
+    if (props.value === null) return null;
+    var icon = "icon-sphere";
+    var url = props.value;
+    var arr = props.value.split(":")
+    if (arr[0] === "doi") {
+        icon = "icon-doi";
+        url = "https://doi.org/" + arr[1];
+    }
+    if (arr[0] === "rg") {
+        icon = "icon-researchgate";
+        url = "https://www.researchgate.net/publication/" + arr[1];
+    }
+    if (arr[0] === "arxiv") {
+        icon = "icon-arxiv";
+        url = "https://arxiv.org/abs/" + arr[1];
+    }
+    
+    if (arr[0] === "ISBN") return <span>{props.value}</span>;
+    else return <a href={url}><span className={icon}></span></a>;
 }
 
 export default App;
