@@ -2,11 +2,11 @@
   "sqlite_sequence": [
     {
       "name": "collection_author",
-      "seq": 51
+      "seq": 56
     },
     {
       "name": "author",
-      "seq": 44
+      "seq": 47
     },
     {
       "name": "database",
@@ -14,7 +14,7 @@
     },
     {
       "name": "collection",
-      "seq": 33
+      "seq": 35
     }
   ],
   "collection_author": [
@@ -272,6 +272,21 @@
       "id": 51,
       "c_id": 16,
       "a_id": 2
+    },
+    {
+      "id": 52,
+      "c_id": 33,
+      "a_id": 45
+    },
+    {
+      "id": 53,
+      "c_id": 34,
+      "a_id": 46
+    },
+    {
+      "id": 54,
+      "c_id": 34,
+      "a_id": 47
     }
   ],
   "author": [
@@ -537,6 +552,24 @@
       "id": 44,
       "surname": "O'Brien",
       "name": "Eamonn",
+      "url": null
+    },
+    {
+      "id": 45,
+      "surname": "Kohel",
+      "name": "David",
+      "url": "http://iml.univ-mrs.fr/~kohel/"
+    },
+    {
+      "id": 46,
+      "surname": "Jones",
+      "name": "John",
+      "url": "https://hobbes.la.asu.edu/"
+    },
+    {
+      "id": 47,
+      "surname": "Roberts",
+      "name": "David P.",
       "url": null
     }
   ],
@@ -966,7 +999,7 @@
       "name": "Database of Permutation Pattern Avoidance",
       "url": "https://math.depaul.edu/bridget/patterns.html",
       "object_type": "permutation pattern",
-      "size": null,
+      "size": 54,
       "published": null,
       "provenance": null,
       "comment": null,
@@ -1148,6 +1181,60 @@
       "object_type": "",
       "size": null,
       "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "citable": null,
+      "collaborative": null,
+      "decentralised": null,
+      "interoperable": null,
+      "searchable": null,
+      "selfexplaining": null
+    },
+    {
+      "id": 33,
+      "name": "Echidna Databases",
+      "url": "http://iml.univ-mrs.fr/~kohel/dbs/",
+      "object_type": "",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": "Databases for Elliptic Curves and Higher Dimensional Analogues",
+      "complete": null,
+      "irredundant": null,
+      "citable": null,
+      "collaborative": null,
+      "decentralised": null,
+      "interoperable": null,
+      "searchable": null,
+      "selfexplaining": null
+    },
+    {
+      "id": 34,
+      "name": "Database of Local Fields",
+      "url": "https://math.la.asu.edu/~jj/localfields/",
+      "object_type": "",
+      "size": null,
+      "published": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "citable": null,
+      "collaborative": null,
+      "decentralised": null,
+      "interoperable": null,
+      "searchable": null,
+      "selfexplaining": null
+    },
+    {
+      "id": 35,
+      "name": "Database of Number Fields",
+      "url": "https://hobbes.la.asu.edu/NFDB/",
+      "object_type": "number field",
+      "size": null,
+      "published": "doi:10.1112/S1461157014000424",
       "provenance": null,
       "comment": null,
       "complete": null,
