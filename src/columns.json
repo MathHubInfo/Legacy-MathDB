@@ -1,0 +1,58 @@
+{
+    "general": ["index", "id", "name", "published", "object_type", "size", "comment"],
+    "properties": ["index", "id", "name", "citable", "collaborative", "decentralised", "interoperable", "irredundant", "searchable", "selfexplaining"],
+    "data": {
+        "citable": {
+            "Header": "Citable?"
+        },
+        "collaborative": {
+            "Header": "Collaborative"
+        },
+        "comment": {
+            "Header": "Comment"
+        },
+        "decentralised": {
+            "Header": "Decentralised"
+        },
+        "id": {
+            "Header": "Id",
+            "maxWidth": 40,
+            "style": { "textAlign": "right" }
+        },
+        "index": {
+            "Header": "#",
+            "maxWidth": 30,
+            "className": "text-muted small",
+            "style": { "textAlign": "right" }
+        },
+        "interoperable": {
+            "Header": "Interoperable"
+        },
+        "irredundant": {
+            "Header": "Irredundant?"
+        },
+        "name": {
+            "Header": "Name",
+            "style": { "whiteSpace": "unset" }
+        },
+        "object_type": {
+            "Header": "Type of objects",
+            "maxWidth": 150,
+            "style": { "whiteSpace": "unset" }
+        },
+        "published": {
+            "Header": "Publications",
+            "maxWidth": 120
+        },
+        "searchable": {
+            "Header": "Searchable"
+        },
+        "selfexplaining": {
+            "Header": "Self-explaining"
+        },
+        "size": {
+            "Header": "# of objects",
+            "maxWidth": 100
+        }
+    }
+}

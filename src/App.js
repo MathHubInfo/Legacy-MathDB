@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
+import { Button, ButtonGroup, Container } from 'reactstrap';
 import './App.css';
 import db from './cmo.json';
+import cols from './columns.json';
 
 const getAuthors = (collectionId) => {
     
@@ -32,64 +34,54 @@ const boolString = (value) => {
     else return "no";
 }
 
+const makeColumns = (columnSet, computed) => {
+    return cols[columnSet].map((key) => {
+        var c = cols["data"][key];
+        c["accessor"] = key;
+        if (computed.hasOwnProperty(key)) {
+            for (var p in computed[key]) {
+                if (computed[key].hasOwnProperty(p)) c[p] = computed[key][p];
+            }
+        }
+        return c;
+    });
+}
+
 class App extends Component {
+    
+    constructor(props) {
+        super(props);
+        this.state = { columns: "general" };
+        this.toggleDisplay = this.toggleDisplay.bind(this);
+    }
+    
+    toggleDisplay(selected) {
+        this.setState({ columns: selected });
+    }
     
     render() {
 
-        const columns = [{
-            Header: '#',
-            accessor: 'index',
-            maxWidth: 40
-        }, {
-            Header: 'Name',
-            accessor: 'name',
-            Cell: props => <CollectionData text={props.value.text} url={props.value.url} authors={props.value.authors} />
-        }, {
-            Header: 'Published?',
-            accessor: 'published',
-            Cell: props => <Publication value={props.value} />,
-            maxWidth: 200
-        }, {
-            Header: 'Type of objects',
-            accessor: 'object_type',
-            maxWidth: 200
-        }, {
-            Header: '# of objects',
-            accessor: 'size',
-            maxWidth: 100
-        }, {
-            Header: 'Comment',
-            accessor: 'comment'
-        }]
+        const columnProps = {
+            name: {
+                Cell: props => <CollectionData text={props.value.text} url={props.value.url} authors={props.value.authors} />
+            }, 
+            published: {
+                Cell: props => <Publication value={props.value} />
+            },
+            citable: {
+                Cell: props => {boolString(props.value)}
+            },
+            irredundant: {
+                Cell: props => {boolString(props.value)}
+            }
+        }
         
-//        {
-//            Header: 'Citable?',
-//            accessor: 'citable',
-//            Cell: props => {boolString(props.value)}
-//        }, {
-//            Header: 'Irredundant?',
-//            accessor: 'irredundant',
-//            Cell: props => {boolString(props.value)}
-//        }, {
-//            Header: 'Collaborative',
-//            accessor: 'collaborative'
-//        }, {
-//            Header: 'Decentralised',
-//            accessor: 'decentralised'
-//        }, {
-//            Header: 'Interoperable',
-//            accessor: 'interoperable'
-//        }, {
-//            Header: 'Searchable',
-//            accessor: 'searchable'
-//        }, {
-//            Header: 'Self-explaining',
-//            accessor: 'selfexplaining'
-//        }, 
+        const columns = makeColumns(this.state.columns, columnProps);
         
         const data = db.collection.map((c, i) => {
             return {
                 index: i + 1,
+                id: c.id,
                 name: {text: c.name, url: c.url, authors: getAuthors(c.id)},
                 published: c.published,
                 object_type: c.object_type,
@@ -106,9 +98,27 @@ class App extends Component {
         })
 
         return (
-            <div className="App">
-                <ReactTable data={data} columns={columns} className={"-striped"} />
-            </div>
+            <Container className="App">
+                <h1>Catalogue of Collections of Mathematical Objects</h1>
+                <ButtonGroup className="my-3">
+                    <Button size="sm"
+                        onClick={() => this.toggleDisplay("general")} 
+                        active={this.state.columns === "general"}>
+                            General Information
+                    </Button>
+                    <Button size="sm"
+                        onClick={() => this.toggleDisplay("properties")} 
+                        active={this.state.columns === "properties"}>
+                            Collection Properties
+                    </Button>
+                </ButtonGroup>
+                <ReactTable
+                    data={data}
+                    columns={columns}
+                    className={"-striped"}
+                    sortable={true}
+                />
+            </Container>
         );
     }
 }
@@ -133,8 +143,8 @@ function Authors(props) {
 
 function Author(props) {
     const fullname = props.data.name + " " + props.data.surname
-    if (!(props.data.url === null)) return <a href={props.data.url}>{fullname}</a>;
-    else return <span>{fullname}</span>
+    if (!(props.data.url === null)) return <a href={props.data.url} className="author text-muted">{fullname}</a>;
+    else return <span className="author text-muted">{fullname}</span>
 }
 
 function Publication(props) {
@@ -155,8 +165,8 @@ function Publication(props) {
         url = "https://arxiv.org/abs/" + arr[1];
     }
     
-    if (arr[0] === "ISBN") return <span>{props.value}</span>;
-    else return <a href={url}><span className={icon}></span></a>;
+    if (arr[0] === "ISBN") return <span className="isbn">{props.value}</span>;
+    else return <a href={url} className="icn"><span className={icon}></span></a>;
 }
 
 export default App;

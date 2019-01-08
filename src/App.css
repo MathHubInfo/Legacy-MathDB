@@ -1,0 +1,42 @@
+body {
+    color: #333333;
+    font-family: "Work+Sans", sans-serif;
+}
+
+a {
+  color: #2C1EA0;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:hover {
+    color: #6459C5;
+    text-decoration: underline; }
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none; }
+  a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+    color: inherit;
+    text-decoration: none; }
+  a:not([href]):not([tabindex]):focus {
+    outline: 0; }
+
+.multi-line {
+    width: 100%;
+}
+
+.author {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.icn {
+    font-size: 1.3rem;
+}
+.icn:hover {
+    text-decoration: none;
+}
+
+.isbn {
+    font-size: 0.7rem;
+}
