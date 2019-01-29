@@ -1,5 +1,6 @@
 import React from 'react';
 import Collection from './Collection.js'
+import HeaderWithTooltip from './HeaderWithTooltip.js'
 import Publications from './Publications.js'
 import db from './cmo.json';
 import cols from './columns.json';
@@ -36,29 +37,36 @@ function getAuthors(collectionId) {
 function tableData(columns) {
     
     const columnProps = {
-        name: {
-            Cell: props => <Collection text={props.value.text} url={props.value.url} authors={props.value.authors} />
-        }, 
-        published: {
-            Cell: props => <Publications value={props.value} />
-        },
         citable: {
             Cell: props => {boolString(props.value)}
         },
+        comment: {
+            Cell: props => <div>{props.value}</div>
+        },
         irredundant: {
             Cell: props => {boolString(props.value)}
+        },
+        name: {
+            Cell: props => <Collection show={columns === "general"} text={props.value.text} url={props.value.url} authors={props.value.authors} />
+        }, 
+        published: {
+            Cell: props => <Publications value={props.value} />
         }
     }
     
     const c = cols[columns].map((key) => {
-        var c = cols["data"][key];
-        c["accessor"] = key;
+        var col = cols["data"][key];
+        col["accessor"] = key;
         if (columnProps.hasOwnProperty(key)) {
             for (var p in columnProps[key]) {
-                if (columnProps[key].hasOwnProperty(p)) c[p] = columnProps[key][p];
+                if (columnProps[key].hasOwnProperty(p)) col[p] = columnProps[key][p];
             }
         }
-        return c;
+        if (col.hasOwnProperty("Description")) {
+            var headerText = col["Header"];
+            col["Header"] = () => (<HeaderWithTooltip id={key} text={headerText} tooltip={col["Description"]} />)
+        }
+        return col;
     });;
         
     const d = db.collection.map((c, i) => {

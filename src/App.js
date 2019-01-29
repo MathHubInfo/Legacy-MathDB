@@ -21,12 +21,19 @@ class App extends Component {
         
         return (
             <Container className="App">
-                <h1>Catalogue of Collections of Mathematical Objects</h1>
+                <h1>Catalogue of Mathematical Datasets</h1>
+                <p>See the <a href="https://github.com/MathHubInfo/Documentation/wiki/Math-Databases">wiki</a> for the non-tabulated contents of this catalogue.</p>
+                <p>The FAIR readiness is assessed according to <a href="https://doi.org/10.1038/sdata.2016.18">FAIR Principles</a> on the dataset level.</p>
                 <ButtonGroup className="my-3">
                     <Button size="sm"
                         onClick={() => this.toggleDisplay("general")} 
                         active={this.state.columns === "general"}>
                             General Information
+                    </Button>
+                    <Button size="sm"
+                        onClick={() => this.toggleDisplay("FAIR")} 
+                        active={this.state.columns === "FAIR"}>
+                            FAIR Readiness
                     </Button>
                     <Button size="sm"
                         onClick={() => this.toggleDisplay("properties")} 

@@ -6,7 +6,7 @@ export default class Collection extends Component {
         return(
             <React.Fragment>
                 <a href={this.props.url}>{this.props.text}</a><br/>
-                <Authors data={this.props.authors} />
+                <Authors show={this.props.show} data={this.props.authors} />
             </React.Fragment>
         );
     }
@@ -20,7 +20,7 @@ function Author(props) {
 }
 
 function Authors(props) {
-    if ((typeof props.data !== 'undefined')) return(
+    if ((typeof props.data !== 'undefined') && props.show) return(
         <React.Fragment>
             {props.data.map((a, i) => <React.Fragment key={i}>{!!i && ", "} <Author data={a} /></React.Fragment> )}
         </React.Fragment>

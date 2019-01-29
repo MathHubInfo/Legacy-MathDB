@@ -1,18 +1,97 @@
 {
-    "general": ["index", "id", "name", "published", "object_type", "size", "comment"],
-    "properties": ["index", "id", "name", "citable", "collaborative", "decentralised", "interoperable", "irredundant", "searchable", "selfexplaining"],
+    "general": ["index", "id", "name", "published", "object_type", "comment"],
+    "size": ["index", "id", "name", "number_of_objects", "number_of_datasets", "number_of_contributors", "time_to_generate"],
+    "FAIR": ["index", "id", "name", "F1", "F2", "F3", "F4", "FD", "A1", "A2", "AD", "I1", "I2", "I3", "R1", "R2", "R3", "FAIR_summary"],
+    "properties": ["index", "id", "name", "collaborative", "decentralised", "interoperable", "irredundant", "searchable", "selfexplaining"],
     "data": {
-        "citable": {
-            "Header": "Citable?"
-        },
         "collaborative": {
-            "Header": "Collaborative"
+            "Header": "Collaborative",
+            "style": { "whiteSpace": "unset" }
         },
         "comment": {
-            "Header": "Comment"
+            "Header": "Comment",
+            "style": { "whiteSpace": "unset" }
+        },
+        "complete": {
+            "Header": "Complete"
         },
         "decentralised": {
-            "Header": "Decentralised"
+            "Header": "Decentralised",
+            "style": { "whiteSpace": "unset" }
+        },
+        "F1": {
+            "Header": "F1",
+            "maxWidth": 50,
+            "Description": "The dataset has a globally unique and persistent identifier"
+        },
+        "F2": {
+            "Header": "F2",
+            "maxWidth": 50,
+            "Description": "The dataset has rich metadata (defined by R)"
+        },
+        "F3": {
+            "Header": "F3",
+            "maxWidth": 50,
+            "Description": "Metadata clearly and explicitly include the identifier of the data it describes"
+        },
+        "F4": {
+            "Header": "F4",
+            "maxWidth": 50,
+            "Description": "The metadata are registered or indexed in a searchable resource"
+        },
+        "FD": {
+            "Header": "FD",
+            "maxWidth": 50,
+            "Description": "Each object is assigned a unique and persistent identifier"
+        },
+        "A1": {
+            "Header": "A1",
+            "maxWidth": 50,
+            "Description": "The dataset metadata are retrievable by their identifier using a standardized communications protocol"
+        },
+        "A2": {
+            "Header": "A2",
+            "maxWidth": 50,
+            "Description": "Metadata are accessible, even when the data are no longer available"
+        },
+        "AD": {
+            "Header": "AD",
+            "maxWidth": 50,
+            "Description": "Each datum is retrievable by its identifier using a standardized communications protocol"
+        },
+        "I1": {
+            "Header": "I1",
+            "maxWidth": 50,
+            "Description": "Metadata use a formal, accessible, shared, and broadly applicable language for knowledge representation"
+        },
+        "I2": {
+            "Header": "I2",
+            "maxWidth": 50,
+            "Description": "Metadata uses vocabularies that follow FAIR principles"
+        },
+        "I3": {
+            "Header": "I3",
+            "maxWidth": 50,
+            "Description": "Metadata include qualified references to other metadata"
+        },
+        "R1": {
+            "Header": "R1",
+            "maxWidth": 50,
+            "Description": "Metadata are released with a clear and accessible data usage license"
+
+        },
+        "R2": {
+            "Header": "R2",
+            "maxWidth": 50,
+            "Description": "Metadata are associated with data provenance"
+        },
+        "R3": {
+            "Header": "R3",
+            "maxWidth": 50,
+            "Description": "Metadata meet domain relevant community standards"
+        },
+        "FAIR_summary": {
+            "Header": "FAIR summary"
         },
         "id": {
             "Header": "Id",
@@ -26,32 +105,51 @@
             "style": { "textAlign": "right" }
         },
         "interoperable": {
-            "Header": "Interoperable"
+            "Header": "Interoperable",
+            "style": { "whiteSpace": "unset" }
         },
         "irredundant": {
-            "Header": "Irredundant?"
+            "Header": "Irredundant?",
+            "style": { "whiteSpace": "unset" }
         },
         "name": {
             "Header": "Name",
             "style": { "whiteSpace": "unset" }
+        },
+        "number_of_objects": {
+            "Header": "# of objects",
+            "maxWidth": 100
+        },
+        "number_of_datasets": {
+            "Header": "# of datasets",
+            "maxWidth": 100
+        },
+        "number_of_contributors": {
+            "Header": "# of contributors",
+            "maxWidth": 100
         },
         "object_type": {
             "Header": "Type of objects",
             "maxWidth": 150,
             "style": { "whiteSpace": "unset" }
         },
+        "provenance": {
+            "Header": "Provenance"
+        },
         "published": {
             "Header": "Publications",
             "maxWidth": 120
         },
         "searchable": {
-            "Header": "Searchable"
+            "Header": "Searchable",
+            "style": { "whiteSpace": "unset" }
         },
         "selfexplaining": {
-            "Header": "Self-explaining"
+            "Header": "Self-explaining",
+            "style": { "whiteSpace": "unset" }
         },
-        "size": {
-            "Header": "# of objects",
+        "time_to_generate": {
+            "Header": "Time to generate",
             "maxWidth": 100
         }
     }
