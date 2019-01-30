@@ -1,15 +1,48 @@
 import React from 'react';
-import Collection from './Collection.js'
-import HeaderWithTooltip from './HeaderWithTooltip.js'
-import Publications from './Publications.js'
+import Collection from './Collection.js';
+import HeaderWithTooltip from './HeaderWithTooltip.js';
+import References from './References.js';
 import db from './cmo.json';
 import cols from './columns.json';
+import FAIR from './FAIR.json';
 
 const boolString = (value) => {
     if (value === null) return "";
     else if (value > 0) return "yes";
     else return "no";
 }
+
+const groupBy = (xs, key) => {
+    return xs.reduce(function(rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+    }, {});
+};
+
+const copy = (from, to, fields) => {
+    for (var j = 0; j < fields.length; j++) {
+         var key = fields[j];
+        to[key] = from[key];
+    }
+}
+
+const copyToBlank = (from, fields) => {
+    var o = {};
+    copy(from, o, fields);
+    return o;
+}
+
+const unmodifiedFields = [
+    "comment",
+    "object_type",
+    "number_of_objects", "number_of_datasets", "number_of_contributors", "size", "time_to_generate",
+    "provenance", "complete", "irredundant", "collaborative",  "decentralised", "interoperable", "searchable", "selfexplaining",
+    //"F1", "F2", "F3", "F4", "FD", "A1", "A2", "AD", "I1", "I2", "I3", "R1", "R2", "R3", 
+    "FAIR_summary"
+]
+
+const refs = groupBy(db.reference, 'c_id');
+const auth = groupBy(db.collection_author, 'c_id');
 
 function getAuthors(collectionId) {
     
@@ -25,11 +58,9 @@ function getAuthors(collectionId) {
         return comparison;
     }
     
-    var authors = db.collection_author.filter((ca) => { 
-        return ca.c_id === collectionId;
-    }).map((ca) => {
-        return db.author.filter((a) => { return a.id === ca.a_id; })[0]
-    })
+    const a = auth[collectionId]
+    if (typeof a === "undefined") return [];
+    var authors = a.map((ca) => db.author.filter((a) => { return a.id === ca.a_id; })[0])
     authors = authors.sort(compare);
     return authors;
 }
@@ -40,17 +71,20 @@ function tableData(columns) {
         citable: {
             Cell: props => {boolString(props.value)}
         },
-        comment: {
-            Cell: props => <div>{props.value}</div>
-        },
         irredundant: {
             Cell: props => {boolString(props.value)}
         },
         name: {
             Cell: props => <Collection show={columns === "general"} text={props.value.text} url={props.value.url} authors={props.value.authors} />
+        },
+        number_of_objects: {
+            Cell: props => {
+                if (props.value === null) return null;
+                else return <span>{props.value.toLocaleString()}</span>
+            }
         }, 
-        published: {
-            Cell: props => <Publications value={props.value} />
+        references: {
+            Cell: props => <References value={props.value} />
         }
     }
     
@@ -70,22 +104,19 @@ function tableData(columns) {
     });;
         
     const d = db.collection.map((c, i) => {
-        return {
+        var o = {
             index: i + 1,
             id: c.id,
             name: {text: c.name, url: c.url, authors: getAuthors(c.id)},
-            published: c.published,
-            object_type: c.object_type,
-            size: c.size,
-            citable: c.citable,
-            irredundant: c.irredundant,
-            collaborative: c.collaborative,
-            decentralised: c.decentralised,
-            interoperable: c.interoperable,
-            searchable: c.searchable,
-            selfexplaining: c.selfexplaining,
-            comment: c.comment
-        }
+            references: refs[c.id],
+            findable: copyToBlank(c, FAIR.F),
+            accessible: copyToBlank(c, FAIR.A),
+            interoperable: copyToBlank(c, FAIR.I),
+            reusable: copyToBlank(c, FAIR.R)
+        };
+        console.log(o);
+        copy(c, o, unmodifiedFields);
+        return o;
     })
     
     return {

@@ -1,0 +1,1 @@
+select "INSERT INTO reference (c_id, reference) VALUES (" || id || ", '" || published || "');" as sql from collection where published is not null;
