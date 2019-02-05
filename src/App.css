@@ -40,3 +40,15 @@ a:not([href]):not([tabindex]) {
 .isbn {
     font-size: 0.7rem;
 }
+
+
+.diagram-legend td, .diagram-legend th { 
+    padding: 0 10px;
+    border: 1px solid #333333;
+}
+
+.diagram td { width: 1rem; height: 1rem; }
+.diagram-true { background-color: green; }
+.diagram-false { background-color: red; }
+.diagram-blank { background-color: white; }
+.diagram-unknown { background-color: black; }

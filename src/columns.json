@@ -1,7 +1,7 @@
 {
     "general": ["index", "id", "name", "references", "object_type", "comment"],
     "size": ["index", "id", "name", "number_of_objects", "number_of_datasets", "number_of_contributors", "time_to_generate"],
-    "FAIR": ["index", "id", "name", "FAIR_summary"],
+    "FAIR": ["index", "id", "name", "FAIR_summary", "findable", "accessible", "interoperable", "reusable"],
     "properties": ["index", "id", "name", "collaborative", "decentralised", "interoperable", "irredundant", "searchable", "selfexplaining"],
     "data": {
         "collaborative": {
@@ -20,7 +20,28 @@
             "style": { "whiteSpace": "unset" }
         },
         "FAIR_summary": {
-            "Header": "FAIR summary"
+            "Header": "FAIR summary",
+            "style": { "whiteSpace": "unset" }
+        },
+        "findable": {
+            "Header": "F",
+            "style": { "textAlign": "center" },
+            "maxWidth": 70
+        },
+        "accessible": {
+            "Header": "A",
+            "style": { "textAlign": "center" },
+            "maxWidth": 70
+        },
+        "interoperable": {
+            "Header": "I",
+            "style": { "textAlign": "center" },
+            "maxWidth": 70
+        },
+        "reusable": {
+            "Header": "R",
+            "style": { "textAlign": "center" },
+            "maxWidth": 70
         },
         "id": {
             "Header": "Id",
@@ -32,10 +53,6 @@
             "maxWidth": 30,
             "className": "text-muted small",
             "style": { "textAlign": "right" }
-        },
-        "interoperable": {
-            "Header": "Interoperable",
-            "style": { "whiteSpace": "unset" }
         },
         "irredundant": {
             "Header": "Irredundant?",

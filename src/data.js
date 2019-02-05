@@ -1,5 +1,6 @@
 import React from 'react';
 import Collection from './Collection.js';
+import Diagram from './Diagram.js';
 import HeaderWithTooltip from './HeaderWithTooltip.js';
 import References from './References.js';
 import db from './cmo.json';
@@ -26,19 +27,18 @@ const copy = (from, to, fields) => {
     }
 }
 
-const copyToBlank = (from, fields) => {
-    var o = {};
-    copy(from, o, fields);
-    return o;
-}
+//const copyToBlank = (from, fields) => {
+//    var o = {};
+//    copy(from, o, fields);
+//    return o;
+//}
 
 const unmodifiedFields = [
     "comment",
     "object_type",
     "number_of_objects", "number_of_datasets", "number_of_contributors", "size", "time_to_generate",
-    "provenance", "complete", "irredundant", "collaborative",  "decentralised", "interoperable", "searchable", "selfexplaining",
-    //"F1", "F2", "F3", "F4", "FD", "A1", "A2", "AD", "I1", "I2", "I3", "R1", "R2", "R3", 
-    "FAIR_summary"
+    "provenance", "complete", "irredundant", "collaborative",  "decentralised", "searchable", "selfexplaining",
+    "FAIR_summary", "findable", "accessible", "interoperable", "reusable"
 ]
 
 const refs = groupBy(db.reference, 'c_id');
@@ -85,11 +85,24 @@ function tableData(columns) {
         }, 
         references: {
             Cell: props => <References value={props.value} />
+        },
+        findable: {
+            Cell: props => <Diagram type="F" value={props.value} />
+        },
+        accessible: {
+            Cell: props => <Diagram type="A" value={props.value} />
+        },
+        interoperable: {
+            Cell: props => <Diagram type="I" value={props.value} />
+        },
+        reusable: {
+            Cell: props => <Diagram type="R" value={props.value} />
         }
     }
     
     const c = cols[columns].map((key) => {
         var col = cols["data"][key];
+        if (typeof col === "undefined") console.log(key);
         col["accessor"] = key;
         if (columnProps.hasOwnProperty(key)) {
             for (var p in columnProps[key]) {
@@ -108,13 +121,8 @@ function tableData(columns) {
             index: i + 1,
             id: c.id,
             name: {text: c.name, url: c.url, authors: getAuthors(c.id)},
-            references: refs[c.id],
-            findable: copyToBlank(c, FAIR.F),
-            accessible: copyToBlank(c, FAIR.A),
-            interoperable: copyToBlank(c, FAIR.I),
-            reusable: copyToBlank(c, FAIR.R)
+            references: refs[c.id]
         };
-        console.log(o);
         copy(c, o, unmodifiedFields);
         return o;
     })
