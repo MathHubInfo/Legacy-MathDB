@@ -20,7 +20,7 @@
             "style": { "whiteSpace": "unset" }
         },
         "FAIR_summary": {
-            "Header": "FAIR summary",
+            "Header": "Summary",
             "style": { "whiteSpace": "unset" }
         },
         "findable": {

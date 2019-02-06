@@ -1,11 +1,9 @@
 import React from 'react';
 import Collection from './Collection.js';
 import Diagram from './Diagram.js';
-import HeaderWithTooltip from './HeaderWithTooltip.js';
 import References from './References.js';
 import db from './cmo.json';
 import cols from './columns.json';
-import FAIR from './FAIR.json';
 
 const boolString = (value) => {
     if (value === null) return "";
@@ -109,10 +107,10 @@ function tableData(columns) {
                 if (columnProps[key].hasOwnProperty(p)) col[p] = columnProps[key][p];
             }
         }
-        if (col.hasOwnProperty("Description")) {
-            var headerText = col["Header"];
-            col["Header"] = () => (<HeaderWithTooltip id={key} text={headerText} tooltip={col["Description"]} />)
-        }
+//        if (col.hasOwnProperty("Description")) {
+//            var headerText = col["Header"];
+//            col["Header"] = () => (<HeaderWithTooltip id={key} text={headerText} tooltip={col["Description"]} />)
+//        }
         return col;
     });;
         
