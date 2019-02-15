@@ -113,16 +113,21 @@
             "M": "The metadata are richly described with a plurality of accurate and relevant attributes"
         },
         "11": {
-            "levels": ["X", "X", "M"],
+            "levels": ["D", "X", "M"],
             "url": "https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/",
             "title": "(Meta)data are released with a clear and accessible data usage license",
-            "description": "Under ‘I’, we covered elements of technical interoperability. R1.1 is about legal interoperability. What usage rights do you attach to your data? This should be described clearly. Ambiguity could severely limit the reuse of your data by organisations that struggle to comply with licensing restrictions. Clarity of licensing status will become more important with automated searches involving more licensing considerations. The conditions under which the data can be used should be clear to machines and humans."
+            "description": "Under ‘I’, we covered elements of technical interoperability. R1.1 is about legal interoperability. What usage rights do you attach to your data? This should be described clearly. Ambiguity could severely limit the reuse of your data by organisations that struggle to comply with licensing restrictions. Clarity of licensing status will become more important with automated searches involving more licensing considerations. The conditions under which the data can be used should be clear to machines and humans.",
+            "D": "The dataset is released with a clear and accessible data usage license",
+            "M": "The metadata are released with a clear and accessible data usage license"
         },
         "12": {
-            "levels": ["X", "X", "M"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/",
             "title": "(Meta)data are associated with detailed provenance",
-            "description": "For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see R1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format."
+            "description": "For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see R1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format.",
+            "D": "The dataset is associated with detailed provenance",
+            "A": "The data are associated with detailed provenance",
+            "M": "The metadata are associated with detailed provenance"
         },
         "13":  {
             "levels": ["D", "A", "M"],

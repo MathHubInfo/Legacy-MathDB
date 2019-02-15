@@ -49,9 +49,9 @@ function Description(props) {
             <Container>
                 <Row>
                     <Col>
-            
+<h4>FAIR: Findable, Accessible, Interoperable and Reusable</h4>
 <p>
-Mathematics does not currently have specific guidelines for following the <a href="https://doi.org/10.1038/sdata.2016.18">FAIR Principles</a>.  
+This information in the table below assesses the collections according to the <a href="https://doi.org/10.1038/sdata.2016.18">FAIR Principles</a>.  
 Please see the <a href="https://github.com/MathHubInfo/Documentation/wiki/Math-Databases#FAIR">FAIR section of the survey wiki</a> for descriptions of each of the principles.
 Another good reference is <a href="https://www.go-fair.org/fair-principles/">GO FAIR</a>.</p>
                     </Col>
