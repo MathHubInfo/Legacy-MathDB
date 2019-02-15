@@ -60,10 +60,12 @@ Another good reference is <a href="https://www.go-fair.org/fair-principles/">GO 
                     <Col sm="8" md="9" lg="10">
 <p>
 FAIR readiness of a collection is represented by a table of colours for each of the four main principles: findable, accessible, interoperable and reusable.
-Where the rows represent the sub-properties and the columns the readiness for metadata, dataset and each datum, in this order.  The possible values are: unknown (black), not considered (blank), mostly supported (green), somewhat supported (yellow) and mostly unsupported (red).
+The rows represent the sub-properties and the columns the readiness for metadata, dataset and each datum, in this order.  The possible values are: unknown (black), not considered (blank), mostly supported (green), somewhat supported (yellow) and mostly unsupported (red).
 </p>
-<p>The rows of each diagram correspond to the items in the principle: <b>F1</b>, <b>F2</b>, <b>F3</b>, <b>F4</b> for Findable; <b>A1</b>, <b>A1.1</b>, <b>A1.2</b>, <b>A2</b> for Accessible; <b>I1</b>, <b>I2</b>, <b>I3</b> for Interoperable and <b>R1</b>, <b>R1.1</b>, <b>R1.2</b>, <b>R1.3</b> for Reusable.</p>
-<p>The three columns stand for the three layers.  <b>D</b> for dataset, <b>A</b> for datum and <b>M</b> for metadata.</p>
+<p>The three columns stand for the three layers: <b>D</b> for dataset, <b>A</b> for datum and <b>M</b> for metadata.
+The rows of each diagram correspond to the items in the principle: <b>F1</b>, <b>F2</b>, <b>F3</b>, <b>F4</b> for Findable; <b>A1</b>, <b>A1.1</b>, <b>A1.2</b>, <b>A2</b> for Accessible; <b>I1</b>, <b>I2</b>, <b>I3</b> for Interoperable and <b>R1</b>, <b>R1.1</b>, <b>R1.2</b>, <b>R1.3</b> for Reusable.</p>
+<p>TODO: Describe the actions: hover/click.</p>
+
                     </Col>
                     <Col sm="4" md="3" lg="2">
 <p>An example of a diagram for <b>F</b></p>

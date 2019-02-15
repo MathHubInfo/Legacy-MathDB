@@ -71,7 +71,7 @@ class Cell extends Component {
     render() {
         return (
             <td className={cellClass(this.props.value)}>
-                <div className="tooltip-field" id={this.props.divId}></div>
+                <a className="tooltip-field" id={this.props.divId} href={"https://github.com/MathHubInfo/Documentation/wiki/Math-Databases#" + this.props.meta.type + this.props.meta.item}>&nbsp;</a>
                 <Tooltip placement="top" isOpen={this.state.tooltipOpen} target={this.props.divId} toggle={this.toggle}>
                     {FAIR[this.props.meta.type][this.props.meta.item][this.props.level]}
                 </Tooltip>
