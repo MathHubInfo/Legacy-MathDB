@@ -25,12 +25,6 @@ const copy = (from, to, fields) => {
     }
 }
 
-//const copyToBlank = (from, fields) => {
-//    var o = {};
-//    copy(from, o, fields);
-//    return o;
-//}
-
 const unmodifiedFields = [
     "comment",
     "object_type",

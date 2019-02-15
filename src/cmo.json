@@ -14,11 +14,11 @@
     },
     {
       "name": "reference",
-      "seq": 10
+      "seq": 12
     },
     {
       "name": "collection",
-      "seq": 43
+      "seq": 44
     }
   ],
   "collection_author": [
@@ -629,13 +629,13 @@
     {
       "id": 48,
       "surname": "Kaski",
-      "name": "Kaski",
+      "name": "Petteri",
       "url": null
     },
     {
       "id": 49,
       "surname": "Östergård",
-      "name": "Östergård",
+      "name": "Patric",
       "url": "https://users.aalto.fi/~pat/"
     },
     {
@@ -773,6 +773,16 @@
       "id": 10,
       "c_id": 36,
       "reference": "doi:10.1090/S0025-5718-04-01626-6"
+    },
+    {
+      "id": 11,
+      "c_id": 18,
+      "reference": "ISBN:9789082750010"
+    },
+    {
+      "id": 12,
+      "c_id": 44,
+      "reference": "ISBN:9789082750027"
     }
   ],
   "collection": [
@@ -1206,14 +1216,14 @@
       "name": "An Encyclopedia of Quadri-Figures",
       "url": "https://chrisvantienhoven.nl/mathematics/encyclopedia",
       "object_type": "quadri-figure",
-      "number_of_objects": null,
+      "number_of_objects": 300,
       "number_of_datasets": null,
       "number_of_contributors": null,
       "size_compressed": null,
       "size_uncompressed": null,
       "time_to_generate": null,
       "provenance": null,
-      "comment": null,
+      "comment": "Items dependent on 4 mutually independent points/lines in geometry.",
       "complete": null,
       "irredundant": null,
       "collaborative": null,
@@ -1839,6 +1849,31 @@
       "time_to_generate": null,
       "provenance": null,
       "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 44,
+      "name": "Encyclopedia of Polygon Geometry",
+      "url": "https://chrisvantienhoven.nl/mathematics/encyclopedia-of-poly-geometry",
+      "object_type": "polygon geometry",
+      "number_of_objects": 15,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": " Items dependent on n (n=integer) mutually independent points/lines in geometry.",
       "complete": null,
       "irredundant": null,
       "collaborative": null,
