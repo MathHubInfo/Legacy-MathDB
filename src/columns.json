@@ -84,7 +84,7 @@
         },
         "references": {
             "Header": "References",
-            "maxWidth": 120
+            "maxWidth": 150
         },
         "searchable": {
             "Header": "Searchable",

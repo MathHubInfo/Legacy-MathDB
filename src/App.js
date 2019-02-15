@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Tabs from './Tabs.js';
 import './App.css';
 import tableData from './data.js';
@@ -22,18 +22,21 @@ class App extends Component {
         
         return (
             <Container className="App">
-            
-                <h1>Catalogue of Mathematical Datasets</h1>
-                <p>See the <a href="https://github.com/MathHubInfo/Documentation/wiki/Math-Databases">wiki</a> for the non-tabulated contents of this catalogue.</p>
-            
-                <Tabs active={this.state.columns} toggleDisplay={(c) => this.toggleDisplay(c)} />
-            
-                <ReactTable
-                    data={tb.data}
-                    columns={tb.columns}
-                    className={"-striped"}
-                    sortable={true}
-                />
+                <Row>
+                    <Col>
+                        <h1>Catalogue of Mathematical Datasets</h1>
+                        <p>See the <a href="https://github.com/MathHubInfo/Documentation/wiki/Math-Databases">wiki</a> for the non-tabulated contents of this catalogue.</p>
+
+                        <Tabs active={this.state.columns} toggleDisplay={(c) => this.toggleDisplay(c)} />
+
+                        <ReactTable
+                            data={tb.data}
+                            columns={tb.columns}
+                            className={"-striped"}
+                            sortable={true}
+                        />
+                    </Col>
+                </Row>
             </Container>
         );
     }

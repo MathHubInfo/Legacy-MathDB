@@ -2,11 +2,11 @@
   "sqlite_sequence": [
     {
       "name": "collection_author",
-      "seq": 64
+      "seq": 70
     },
     {
       "name": "author",
-      "seq": 56
+      "seq": 62
     },
     {
       "name": "database",
@@ -18,7 +18,7 @@
     },
     {
       "name": "collection",
-      "seq": 44
+      "seq": 49
     }
   ],
   "collection_author": [
@@ -341,6 +341,36 @@
       "id": 64,
       "c_id": 43,
       "a_id": 56
+    },
+    {
+      "id": 65,
+      "c_id": 45,
+      "a_id": 57
+    },
+    {
+      "id": 66,
+      "c_id": 44,
+      "a_id": 22
+    },
+    {
+      "id": 67,
+      "c_id": 46,
+      "a_id": 58
+    },
+    {
+      "id": 68,
+      "c_id": 47,
+      "a_id": 59
+    },
+    {
+      "id": 69,
+      "c_id": 48,
+      "a_id": 60
+    },
+    {
+      "id": 70,
+      "c_id": 49,
+      "a_id": 61
     }
   ],
   "author": [
@@ -679,6 +709,36 @@
       "surname": "Malle",
       "name": "Gunter",
       "url": "http://www.mathematik.uni-kl.de/~malle/en/index.html"
+    },
+    {
+      "id": 57,
+      "surname": "Kimberling",
+      "name": "Clark",
+      "url": "http://faculty.evansville.edu/ck6/"
+    },
+    {
+      "id": 58,
+      "surname": "Gibert",
+      "name": "Bernard",
+      "url": "http://bernard.gibert.pagesperso-orange.fr/index.html"
+    },
+    {
+      "id": 59,
+      "surname": "Hart",
+      "name": "George W.",
+      "url": "http://www.georgehart.com/index.html"
+    },
+    {
+      "id": 60,
+      "surname": "Dobcsányi",
+      "name": "Peter",
+      "url": null
+    },
+    {
+      "id": 61,
+      "surname": "Livingston",
+      "name": "Chuck",
+      "url": "http://php.indiana.edu/~livingst/"
     }
   ],
   "database": [
@@ -1874,6 +1934,131 @@
       "time_to_generate": null,
       "provenance": null,
       "comment": " Items dependent on n (n=integer) mutually independent points/lines in geometry.",
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 45,
+      "name": "Encyclopedia of Triangle Centers",
+      "url": "http://faculty.evansville.edu/ck6/encyclopedia/ETC.html",
+      "object_type": "triangle center",
+      "number_of_objects": 32000,
+      "number_of_datasets": "",
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 46,
+      "name": "Catalogue of Triangle Cubics",
+      "url": "http://bernard.gibert.pagesperso-orange.fr/ctc.html",
+      "object_type": "triangle cubic",
+      "number_of_objects": 1090,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 47,
+      "name": "The Encyclopedia of Polyhedra",
+      "url": "http://www.georgehart.com/virtual-polyhedra/vp.html",
+      "object_type": "polyhedron",
+      "number_of_objects": null,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 48,
+      "name": "Design Database",
+      "url": "http://www.maths.qmul.ac.uk/~lsoicher/designtheory.org/database/",
+      "object_type": "block design",
+      "number_of_objects": 2448,
+      "number_of_datasets": 10,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 49,
+      "name": "Table of Knot Invariants",
+      "url": "http://www.indiana.edu/~knotinfo/",
+      "object_type": "knot invariant",
+      "number_of_objects": null,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
       "complete": null,
       "irredundant": null,
       "collaborative": null,
