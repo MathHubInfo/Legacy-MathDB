@@ -2,7 +2,7 @@
     "general": ["index", "id", "name", "references", "object_type", "comment"],
     "size": ["index", "id", "name", "number_of_objects", "number_of_datasets", "number_of_contributors", "time_to_generate"],
     "FAIR": ["index", "id", "name", "FAIR_summary", "findable", "accessible", "interoperable", "reusable"],
-    "properties": ["index", "id", "name", "collaborative", "decentralised", "interoperable", "irredundant", "searchable", "selfexplaining"],
+    "properties": ["index", "id", "name", "collaborative", "decentralised", "irredundant", "searchable", "selfexplaining"],
     "data": {
         "collaborative": {
             "Header": "Collaborative",

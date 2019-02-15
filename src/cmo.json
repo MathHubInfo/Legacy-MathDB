@@ -795,11 +795,11 @@
       "decentralised": null,
       "searchable": null,
       "selfexplaining": null,
-      "FAIR_summary": null,
-      "findable": null,
-      "accessible": null,
-      "interoperable": null,
-      "reusable": null
+      "FAIR_summary": "The paper describing the collection (metadata) has a DOI, which links to the website where the dataset is published.  Only certain parts of the dataset are available in a machine readable format",
+      "findable": "MFTXXMXXTFFT",
+      "accessible": "TTTTTTTTTXXT",
+      "interoperable": "FMFFMFFMF",
+      "reusable": "MFTFXTMMMMMM"
     },
     {
       "id": 2,

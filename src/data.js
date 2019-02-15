@@ -36,7 +36,7 @@ const unmodifiedFields = [
     "object_type",
     "number_of_objects", "number_of_datasets", "number_of_contributors", "size", "time_to_generate",
     "provenance", "complete", "irredundant", "collaborative",  "decentralised", "searchable", "selfexplaining",
-    "FAIR_summary", "findable", "accessible", "interoperable", "reusable"
+    "FAIR_summary"
 ]
 
 const refs = groupBy(db.reference, 'c_id');
@@ -85,16 +85,16 @@ function tableData(columns) {
             Cell: props => <References value={props.value} />
         },
         findable: {
-            Cell: props => <Diagram type="F" value={props.value} />
+            Cell: props => <Diagram type="F" value={props.value.value} id={props.value.id} />
         },
         accessible: {
-            Cell: props => <Diagram type="A" value={props.value} />
+            Cell: props => <Diagram type="A" value={props.value.value} id={props.value.id} />
         },
         interoperable: {
-            Cell: props => <Diagram type="I" value={props.value} />
+            Cell: props => <Diagram type="I" value={props.value.value} id={props.value.id} />
         },
         reusable: {
-            Cell: props => <Diagram type="R" value={props.value} />
+            Cell: props => <Diagram type="R" value={props.value.value} id={props.value.id} />
         }
     }
     
@@ -119,6 +119,10 @@ function tableData(columns) {
             index: i + 1,
             id: c.id,
             name: {text: c.name, url: c.url, authors: getAuthors(c.id)},
+            findable: {id: c.id, value: c.findable},
+            accessible: {id: c.id, value: c.accessible},
+            interoperable: {id: c.id, value: c.interoperable},
+            reusable: {id: c.id, value: c.reusable},
             references: refs[c.id]
         };
         copy(c, o, unmodifiedFields);

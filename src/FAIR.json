@@ -1,100 +1,137 @@
 {
     "F": {
+        "title": "Findable",
         "1": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/",
             "title": "(Meta)data are assigned globally unique and persistent identifiers",
-            "description": "Globally unique and persistent identifiers remove ambiguity in the meaning of your published data by assigning a unique identifier to every element of metadata and every concept/measurement in your dataset."
+            "description": "Globally unique and persistent identifiers remove ambiguity in the meaning of your published data by assigning a unique identifier to every element of metadata and every concept/measurement in your dataset.",
+            "D": "The dataset has a globally unique and persistent identifier",
+            "A": "The data are assigned globally unique and persistent identifiers",
+            "M": "The metadata have a globally unique and persistent identifier"
         },
         "2": {
-            "levels": ["M", "X", "X"],
+            "levels": ["X", "X", "M"],
             "url": "https://www.go-fair.org/fair-principles/f2-data-described-rich-metadata/",
             "title": "Data are described with rich metadata",
-            "description": "Rich metadata allow a computer to automatically accomplish routine and tedious sorting and prioritising tasks that currently demand a lot of attention from researchers.  Rich metadata implies that you should not presume that you know who will want to use your data, or for what purpose."
+            "description": "Rich metadata allow a computer to automatically accomplish routine and tedious sorting and prioritising tasks that currently demand a lot of attention from researchers.  Rich metadata implies that you should not presume that you know who will want to use your data, or for what purpose.",
+            "M": "The metadata richly describes the data"
         },
         "3": {
-            "levels": ["M", "X", "X"],
+            "levels": ["X", "X", "M"],
             "url": "https://www.go-fair.org/fair-principles/f3-metadata-clearly-explicitly-include-identifier-data-describe/",
             "title": "Metadata clearly and explicitly include the identifier of the data they describe",
-            "description": "The metadata and the dataset they describe are usually separate files. The association between a metadata file and the dataset should be made explicit by mentioning a dataset’s globally unique and persistent identifier in the metadata."
+            "description": "The metadata and the dataset they describe are usually separate files. The association between a metadata file and the dataset should be made explicit by mentioning a dataset’s globally unique and persistent identifier in the metadata.",
+            "M": "Metadata clearly and explicitly include the identifier of the data they describe"
         },
         "4": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/f4-metadata-registered-indexed-searchable-resource/",
             "title": "(Meta)data are registered or indexed in a searchable resource",
-            "description": "The metadata and the dataset they describe are usually separate files. The association between a metadata file and the dataset should be made explicit by mentioning a dataset’s globally unique and persistent identifier in the metadata."
+            "description": "The metadata and the dataset they describe are usually separate files. The association between a metadata file and the dataset should be made explicit by mentioning a dataset’s globally unique and persistent identifier in the metadata.",
+            "D": "The dataset is registered or indexed in a searchable resource",
+            "A": "The data are registered or indexed in a searchable resource",
+            "M": "The metadata are registered or indexed in a searchable resource"
         }
     },
     "A": {
+        "title": "Accessible",
         "1": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/metadata-retrievable-identifier-standardised-communication-protocol/",
             "title": "(Meta)data are retrievable by their identifier using a standardised communication protocol",
-            "description": "FAIR data retrieval should be mediated without specialised tools or communication methods. So, clearly define who can access the actual data, and specify how.  Most users of the internet retrieve data by ‘clicking on a link’. This is a high-level interface to a low-level protocol called tcp, that the computer executes to load data in the user’s web browser."
+            "description": "FAIR data retrieval should be mediated without specialised tools or communication methods. So, clearly define who can access the actual data, and specify how.  Most users of the internet retrieve data by ‘clicking on a link’. This is a high-level interface to a low-level protocol called tcp, that the computer executes to load data in the user’s web browser.",
+            "D": "The dataset is retrievable by its identifier using a standardised communication protocol",
+            "A": "The data are retrievable by their identifiers using a standardised communication protocol",
+            "M": "The metadata are retrievable by their identifier using a standardised communication protocol"
         },
         "11": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/a1-1-protocol-open-free-universally-implementable/",
             "title": "The protocol is open, free and universally implementable",
-            "description": "To maximise data reuse, the protocol should be free (no-cost) and open (-sourced) and thus globally implementable to facilitate data retrieval. Anyone with a computer and an internet connection can access at least the metadata."
+            "description": "To maximise data reuse, the protocol should be free (no-cost) and open (-sourced) and thus globally implementable to facilitate data retrieval. Anyone with a computer and an internet connection can access at least the metadata.",
+            "D": "The protocol to retrieve the dataset is open, free and universally implementable",
+            "A": "The protocol to retrieve the data is open, free and universally implementable",
+            "M": "The protocol to retrieve the metadata is open, free and universally implementable"
         },
         "12": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/a1-2-protocol-allows-authentication-authorisation-required/",
             "title": "The protocol allows for an authentication and authorisation where necessary",
-            "description": "This is a key, but often misunderstood, element of FAIR. The ‘A’ in FAIR does not necessarily mean ‘open’ or ‘free’. Rather, it implies that one should provide the exact conditions under which the data are accessible. Hence, even heavily protected and private data can be FAIR. Ideally, accessibility is specified in such a way that a machine can automatically understand the requirements, and then either automatically execute the requirements or alert the user to the requirements."
+            "description": "This is a key, but often misunderstood, element of FAIR. The ‘A’ in FAIR does not necessarily mean ‘open’ or ‘free’. Rather, it implies that one should provide the exact conditions under which the data are accessible. Hence, even heavily protected and private data can be FAIR. Ideally, accessibility is specified in such a way that a machine can automatically understand the requirements, and then either automatically execute the requirements or alert the user to the requirements.",
+            "D": "The protocol to retrieve the dataset allows for an authentication and authorisation where necessary",
+            "A": "The protocol to retrieve the data allows for an authentication and authorisation where necessary",
+            "M": "The protocol to retrieve the metadata allows for an authentication and authorisation where necessary"
         },
         "2": {
-            "levels": ["M", "X", "X"],
+            "levels": ["M"],
             "url": "https://www.go-fair.org/fair-principles/a2-metadata-accessible-even-data-no-longer-available/",
             "title": "Metadata should be accessible even when the data is no longer available",
-            "description": "Metadata are valuable in and of themselves, when planning research, especially replication studies. Even if the original data are missing, tracking down people, institutions or publications associated with the original research can be extremely useful."
+            "description": "Metadata are valuable in and of themselves, when planning research, especially replication studies. Even if the original data are missing, tracking down people, institutions or publications associated with the original research can be extremely useful.",
+            "M": "Metadata should be accessible even when the data is no longer available"
         }
     },
     "I": {
+        "title": "Interoperable",
         "1": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/i1-metadata-use-formal-accessible-shared-broadly-applicable-language-knowledge-representation/",
             "title": "(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation",
-            "description": "Humans should be able to exchange and interpret each other’s data (so preferably do not use dead languages). But this also applies to computers, meaning that data that should be readable for machines without the need for specialised or ad hoc algorithms, translators, or mappings."
+            "description": "Humans should be able to exchange and interpret each other’s data (so preferably do not use dead languages). But this also applies to computers, meaning that data that should be readable for machines without the need for specialised or ad hoc algorithms, translators, or mappings.",
+            "D": "The dataset uses a formal, accessible, shared, and broadly applicable language for knowledge representation",
+            "A": "The data use a formal, accessible, shared, and broadly applicable language for knowledge representation",
+            "M": "The metadata use a formal, accessible, shared, and broadly applicable language for knowledge representation"
         },
         "2": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/",
             "title": "(Meta)data use vocabularies that follow the FAIR principles",
-            "description": "The controlled vocabulary used to describe datasets needs to be documented and resolvable using globally unique and persistent identifiers. This documentation needs to be easily findable and accessible by anyone who uses the dataset."
+            "description": "The controlled vocabulary used to describe datasets needs to be documented and resolvable using globally unique and persistent identifiers. This documentation needs to be easily findable and accessible by anyone who uses the dataset.",
+            "D": "The dataset uses vocabularies that follow the FAIR principles",
+            "A": "The data use vocabularies that follow the FAIR principles",
+            "M": "The metadata use vocabularies that follow the FAIR principles"
         },
         "3": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/i3-metadata-include-qualified-references-metadata/",
             "title": "(Meta)data include qualified references to other (meta)data",
-            "description": "A qualified reference is a cross-reference that explains its intent. For example, X is regulator of Y is a much more qualified reference than X is associated with Y, or X see also Y. The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data, balanced against the time/energy involved in making a good data model. To be more concrete, you should specify if one dataset builds on another data set, if additional datasets are needed to complete the data, or if complementary information is stored in a different dataset."
+            "description": "A qualified reference is a cross-reference that explains its intent. For example, X is regulator of Y is a much more qualified reference than X is associated with Y, or X see also Y. The goal therefore is to create as many meaningful links as possible between (meta)data resources to enrich the contextual knowledge about the data, balanced against the time/energy involved in making a good data model. To be more concrete, you should specify if one dataset builds on another data set, if additional datasets are needed to complete the data, or if complementary information is stored in a different dataset.",
+            "D": "The dataset includes qualified references to other (meta)data",
+            "A": "The data include qualified references to other (meta)data",
+            "M": "The metadata include qualified references to other (meta)data"
         }
     },
     "R": {
+        "title": "Reusable",
         "1": {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/r1-metadata-richly-described-plurality-accurate-relevant-attributes/",
             "title": "(Meta)data are richly described with a plurality of accurate and relevant attributes",
-            "description": "It will be much easier to find and reuse data if there are many labels are attached to the data. Principle R1 is related to F2, but R1 focuses on the ability of a user (machine or human) to decide if the data is actually USEFUL in a particular context."
+            "description": "It will be much easier to find and reuse data if there are many labels are attached to the data. Principle R1 is related to F2, but R1 focuses on the ability of a user (machine or human) to decide if the data is actually USEFUL in a particular context.",
+            "D": "The dataset is richly described with a plurality of accurate and relevant attributes",
+            "A": "The data are richly described with a plurality of accurate and relevant attributes",
+            "M": "The metadata are richly described with a plurality of accurate and relevant attributes"
         },
         "11": {
-            "levels": ["M", "X", "X"],
+            "levels": ["X", "X", "M"],
             "url": "https://www.go-fair.org/fair-principles/r1-1-metadata-released-clear-accessible-data-usage-license/",
             "title": "(Meta)data are released with a clear and accessible data usage license",
             "description": "Under ‘I’, we covered elements of technical interoperability. R1.1 is about legal interoperability. What usage rights do you attach to your data? This should be described clearly. Ambiguity could severely limit the reuse of your data by organisations that struggle to comply with licensing restrictions. Clarity of licensing status will become more important with automated searches involving more licensing considerations. The conditions under which the data can be used should be clear to machines and humans."
         },
         "12": {
-            "levels": ["M", "X", "X"],
+            "levels": ["X", "X", "M"],
             "url": "https://www.go-fair.org/fair-principles/r1-2-metadata-associated-detailed-provenance/",
             "title": "(Meta)data are associated with detailed provenance",
             "description": "For others to reuse your data, they should know where the data came from (i.e., clear story of origin/history, see R1), who to cite and/or how you wish to be acknowledged. Include a description of the workflow that led to your data: Who generated or collected it? How has it been processed? Has it been published before? Does it contain data from someone else that you may have transformed or completed? Ideally, this workflow is described in a machine-readable format."
         },
         "13":  {
-            "levels": ["M", "D", "A"],
+            "levels": ["D", "A", "M"],
             "url": "https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/",
             "title": "(Meta)data meet domain-relevant community standards",
-            "description": "It is easier to reuse data sets if they are similar: same type of data, data organised in a standardised way, well-established and sustainable file formats, documentation (metadata) following a common template and using common vocabulary. If community standards or best practices for data archiving and sharing exist, they should be followed."
+            "description": "It is easier to reuse data sets if they are similar: same type of data, data organised in a standardised way, well-established and sustainable file formats, documentation (metadata) following a common template and using common vocabulary. If community standards or best practices for data archiving and sharing exist, they should be followed.",
+            "D": "The dataset meets meet domain-relevant community standards",
+            "A": "The data meet domain-relevant community standards",
+            "M": "The metadata meet domain-relevant community standards"
         }
     },
     "O": "The encodings are well documented."
