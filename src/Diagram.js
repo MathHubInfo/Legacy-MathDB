@@ -23,7 +23,7 @@ export default class Diagram extends Component {
         const model = FAIR[this.props.type];
         var value = this.props.value;
         if (value === null) value = defaultValue[this.props.type];
-        const rows = Object.keys(model).filter(i => i !== "title").map((p, i) => {
+        const rows = model.levels.map((p, i) => {
             var meta = {
                 id: this.props.id,
                 type: this.props.type,
@@ -46,7 +46,8 @@ function Row(props) {
     const levels = ["D", "A", "M"];
     const cells = props.values.split('').map((c, i) => {
         var key = props.meta.type + props.meta.item + levels[i]
-        return <Cell key={key} meta = {props.meta} value={c} divId={"c" + props.meta.id + "-" + props.meta.type + props.meta.item + levels[i]} level={levels[i]} />;
+        if (c === "X") return <td className={cellClass(c)}></td>
+        else return <Cell key={key} meta = {props.meta} value={c} divId={"c" + props.meta.id + "-" + props.meta.type + props.meta.item + levels[i]} level={levels[i]} />;
     })
     return (
         <tr>
