@@ -64,7 +64,7 @@ The rows represent the sub-properties and the columns the readiness for metadata
 </p>
 <p>The three columns stand for the three layers: <b>D</b> for dataset, <b>A</b> for datum and <b>M</b> for metadata.
 The rows of each diagram correspond to the items in the principle: <b>F1</b>, <b>F2</b>, <b>F3</b>, <b>F4</b> for Findable; <b>A1</b>, <b>A1.1</b>, <b>A1.2</b>, <b>A2</b> for Accessible; <b>I1</b>, <b>I2</b>, <b>I3</b> for Interoperable and <b>R1</b>, <b>R1.1</b>, <b>R1.2</b>, <b>R1.3</b> for Reusable.</p>
-<p>TODO: Describe the actions: hover/click.</p>
+<p>Hover the mouse over a square to get a short description or click to go to the wiki for more information.</p>
 
                     </Col>
                     <Col sm="4" md="3" lg="2">
