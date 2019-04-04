@@ -138,7 +138,7 @@
             "url": "https://www.go-fair.org/fair-principles/r1-3-metadata-meet-domain-relevant-community-standards/",
             "title": "(Meta)data meet domain-relevant community standards",
             "description": "It is easier to reuse data sets if they are similar: same type of data, data organised in a standardised way, well-established and sustainable file formats, documentation (metadata) following a common template and using common vocabulary. If community standards or best practices for data archiving and sharing exist, they should be followed.",
-            "D": "(R1.3-D) The dataset meets meet domain-relevant community standards",
+            "D": "(R1.3-D) The dataset meets domain-relevant community standards",
             "A": "(R1.3-A) The data meet domain-relevant community standards",
             "M": "(R1.3-M) The metadata meet domain-relevant community standards"
         }
