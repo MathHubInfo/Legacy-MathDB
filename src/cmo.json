@@ -1,24 +1,133 @@
 {
-  "sqlite_sequence": [
+  "reference": [
     {
-      "name": "collection_author",
-      "seq": 70
+      "id": 1,
+      "c_id": 1,
+      "reference": "doi:10.1007/s00010-006-2843-9"
     },
     {
-      "name": "author",
-      "seq": 62
+      "id": 2,
+      "c_id": 2,
+      "reference": "doi:10.1007/s10998-006-0028-x"
+    },
+    {
+      "id": 3,
+      "c_id": 3,
+      "reference": "https://amc-journal.eu/index.php/amc/article/view/204/192"
+    },
+    {
+      "id": 4,
+      "c_id": 4,
+      "reference": "https://amc-journal.eu/index.php/amc/article/view/204/192"
+    },
+    {
+      "id": 5,
+      "c_id": 5,
+      "reference": "rg:260908716_Polytopes_Derived_from_Sporadic_Simple_Groups"
+    },
+    {
+      "id": 6,
+      "c_id": 6,
+      "reference": "doi:10.26493/1855-3974.455.422"
+    },
+    {
+      "id": 7,
+      "c_id": 9,
+      "reference": "arxiv:1608.04158"
+    },
+    {
+      "id": 8,
+      "c_id": 10,
+      "reference": "ISBN:0198526504"
+    },
+    {
+      "id": 9,
+      "c_id": 35,
+      "reference": "doi:10.1112/S1461157014000424"
+    },
+    {
+      "id": 10,
+      "c_id": 36,
+      "reference": "doi:10.1090/S0025-5718-04-01626-6"
+    },
+    {
+      "id": 11,
+      "c_id": 18,
+      "reference": "ISBN:9789082750010"
+    },
+    {
+      "id": 12,
+      "c_id": 44,
+      "reference": "ISBN:9789082750027"
+    },
+    {
+      "id": 13,
+      "c_id": 51,
+      "reference": "doi:10.1007/s00180-015-0594-6"
+    }
+  ],
+  "sqlite_sequence": [
+    {
+      "name": "reference",
+      "seq": 13
     },
     {
       "name": "database",
       "seq": 10
     },
     {
-      "name": "reference",
-      "seq": 12
+      "name": "collection_author",
+      "seq": 79
     },
     {
       "name": "collection",
-      "seq": 49
+      "seq": 52
+    },
+    {
+      "name": "author",
+      "seq": 70
+    }
+  ],
+  "database": [
+    {
+      "id": 1,
+      "c_id": 21
+    },
+    {
+      "id": 2,
+      "c_id": 22
+    },
+    {
+      "id": 3,
+      "c_id": 23
+    },
+    {
+      "id": 4,
+      "c_id": 24
+    },
+    {
+      "id": 5,
+      "c_id": 25
+    },
+    {
+      "id": 6,
+      "c_id": 26
+    },
+    {
+      "id": 7,
+      "c_id": 27
+    },
+    {
+      "id": 8,
+      "c_id": 28
+    },
+    {
+      "id": 9,
+      "c_id": 29
+    },
+    {
+      "id": 10,
+      "c_id": 30
     }
   ],
   "collection_author": [
@@ -371,478 +480,51 @@
       "id": 70,
       "c_id": 49,
       "a_id": 61
-    }
-  ],
-  "author": [
-    {
-      "id": 1,
-      "surname": "Vauthier",
-      "name": "Laurence",
-      "url": null
-    },
-    {
-      "id": 2,
-      "surname": "Leemans",
-      "name": "Dimitri",
-      "url": "http://homepages.ulb.ac.be/~dleemans/"
-    },
-    {
-      "id": 3,
-      "surname": "Hartley",
-      "name": "Michael",
-      "url": "http://dr-mikes-maths.com/maths.html"
-    },
-    {
-      "id": 4,
-      "surname": "Hubard",
-      "name": "Isabel",
-      "url": "https://www.matem.unam.mx/fsd/hubard"
-    },
-    {
-      "id": 5,
-      "surname": "Hulpke",
-      "name": "Alexander",
-      "url": "http://www.math.colostate.edu/~hulpke/"
-    },
-    {
-      "id": 6,
-      "surname": "Connor",
-      "name": "Thomas",
-      "url": null
-    },
-    {
-      "id": 7,
-      "surname": "Malandro",
-      "name": "Martin",
-      "url": "https://www.shsu.edu/mem037/"
-    },
-    {
-      "id": 8,
-      "surname": "Jipsen",
-      "name": "Peter",
-      "url": "http://www1.chapman.edu/~jipsen/"
-    },
-    {
-      "id": 9,
-      "surname": "Kohonen",
-      "name": "Jukka",
-      "url": ""
-    },
-    {
-      "id": 10,
-      "surname": "Potočnik",
-      "name": "Primož",
-      "url": "https://www.fmf.uni-lj.si/~potocnik/work.htm"
-    },
-    {
-      "id": 11,
-      "surname": "Wilson",
-      "name": "Steve",
-      "url": "http://jan.ucc.nau.edu/~swilson/"
-    },
-    {
-      "id": 12,
-      "surname": "Read",
-      "name": "Ronald",
-      "url": null
-    },
-    {
-      "id": 13,
-      "surname": "Wilson",
-      "name": "Robin",
-      "url": null
-    },
-    {
-      "id": 14,
-      "surname": "Jooyandeh",
-      "name": "Reza",
-      "url": null
-    },
-    {
-      "id": 15,
-      "surname": "Pemmaraju",
-      "name": "Sriram",
-      "url": null
-    },
-    {
-      "id": 16,
-      "surname": "Skiena",
-      "name": "Steven",
-      "url": null
-    },
-    {
-      "id": 17,
-      "surname": "Meringer",
-      "name": "Markus",
-      "url": null
-    },
-    {
-      "id": 18,
-      "surname": "Spence",
-      "name": "Ted",
-      "url": null
-    },
-    {
-      "id": 19,
-      "surname": "Rodrigues",
-      "name": "Bernardo",
-      "url": null
-    },
-    {
-      "id": 20,
-      "surname": "Miyamoto",
-      "name": "Izumi",
-      "url": null
-    },
-    {
-      "id": 21,
-      "surname": "Hanaki",
-      "name": "Akihide",
-      "url": null
-    },
-    {
-      "id": 22,
-      "surname": "van Tienhoven",
-      "name": "Chris",
-      "url": null
-    },
-    {
-      "id": 23,
-      "surname": "Allombert",
-      "name": "Bill",
-      "url": null
-    },
-    {
-      "id": 24,
-      "surname": "Schein",
-      "name": "Igor",
-      "url": null
-    },
-    {
-      "id": 25,
-      "surname": "Wilson",
-      "name": "Robert",
-      "url": null
-    },
-    {
-      "id": 26,
-      "surname": "Walsh",
-      "name": "Peter",
-      "url": null
-    },
-    {
-      "id": 27,
-      "surname": "Tripp",
-      "name": "Jonathan",
-      "url": null
-    },
-    {
-      "id": 28,
-      "surname": "Suleiman",
-      "name": "Ibrahim",
-      "url": null
-    },
-    {
-      "id": 29,
-      "surname": "Parker",
-      "name": "Richard",
-      "url": null
-    },
-    {
-      "id": 30,
-      "surname": "Norton",
-      "name": "Simon",
-      "url": null
-    },
-    {
-      "id": 31,
-      "surname": "Nickerson",
-      "name": "Simon",
-      "url": null
-    },
-    {
-      "id": 32,
-      "surname": "Linton",
-      "name": "Steve",
-      "url": null
-    },
-    {
-      "id": 33,
-      "surname": "Bray",
-      "name": "John",
-      "url": null
-    },
-    {
-      "id": 34,
-      "surname": "Abbott",
-      "name": "Rachel",
-      "url": null
-    },
-    {
-      "id": 35,
-      "surname": "Tenner",
-      "name": "Bridget",
-      "url": "http://math.depaul.edu/bridget/"
-    },
-    {
-      "id": 36,
-      "surname": "Freundt",
-      "name": "Sebastian",
-      "url": null
-    },
-    {
-      "id": 37,
-      "surname": "Pauli",
-      "name": "Sebastian",
-      "url": null
-    },
-    {
-      "id": 38,
-      "surname": "Fraatz",
-      "name": "Robert",
-      "url": null
-    },
-    {
-      "id": 39,
-      "surname": "Grout",
-      "name": "Jason",
-      "url": null
-    },
-    {
-      "id": 40,
-      "surname": "Berčič",
-      "name": "Katja",
-      "url": null
-    },
-    {
-      "id": 41,
-      "surname": "Vidali",
-      "name": "Janoš",
-      "url": null
-    },
-    {
-      "id": 42,
-      "surname": "Besche",
-      "name": "Hans Ulrich",
-      "url": null
-    },
-    {
-      "id": 43,
-      "surname": "Eick",
-      "name": "Bettina",
-      "url": null
-    },
-    {
-      "id": 44,
-      "surname": "O'Brien",
-      "name": "Eamonn",
-      "url": null
-    },
-    {
-      "id": 45,
-      "surname": "Kohel",
-      "name": "David",
-      "url": "http://iml.univ-mrs.fr/~kohel/"
-    },
-    {
-      "id": 46,
-      "surname": "Jones",
-      "name": "John",
-      "url": "https://hobbes.la.asu.edu/"
-    },
-    {
-      "id": 47,
-      "surname": "Roberts",
-      "name": "David P.",
-      "url": null
-    },
-    {
-      "id": 48,
-      "surname": "Kaski",
-      "name": "Petteri",
-      "url": null
-    },
-    {
-      "id": 49,
-      "surname": "Östergård",
-      "name": "Patric",
-      "url": "https://users.aalto.fi/~pat/"
-    },
-    {
-      "id": 50,
-      "surname": "Brouwer",
-      "name": "Andries",
-      "url": "https://www.win.tue.nl/~aeb/"
-    },
-    {
-      "id": 51,
-      "surname": "Conder",
-      "name": "Marston",
-      "url": "https://www.math.auckland.ac.nz/~conder/"
-    },
-    {
-      "id": 52,
-      "surname": "Royle",
-      "name": "Gordon",
-      "url": "https://research-repository.uwa.edu.au/en/persons/gordon-royle"
-    },
-    {
-      "id": 53,
-      "surname": "McKay",
-      "name": "Brendan",
-      "url": "http://users.cecs.anu.edu.au/~bdm/"
-    },
-    {
-      "id": 54,
-      "surname": "Wanless",
-      "name": "Ian",
-      "url": "http://users.monash.edu.au/~iwanless/"
-    },
-    {
-      "id": 55,
-      "surname": "Klüners",
-      "name": "Jürgen",
-      "url": "http://www2.math.uni-paderborn.de/people/juergen-klueners.html"
-    },
-    {
-      "id": 56,
-      "surname": "Malle",
-      "name": "Gunter",
-      "url": "http://www.mathematik.uni-kl.de/~malle/en/index.html"
-    },
-    {
-      "id": 57,
-      "surname": "Kimberling",
-      "name": "Clark",
-      "url": "http://faculty.evansville.edu/ck6/"
-    },
-    {
-      "id": 58,
-      "surname": "Gibert",
-      "name": "Bernard",
-      "url": "http://bernard.gibert.pagesperso-orange.fr/index.html"
-    },
-    {
-      "id": 59,
-      "surname": "Hart",
-      "name": "George W.",
-      "url": "http://www.georgehart.com/index.html"
-    },
-    {
-      "id": 60,
-      "surname": "Dobcsányi",
-      "name": "Peter",
-      "url": null
-    },
-    {
-      "id": 61,
-      "surname": "Livingston",
-      "name": "Chuck",
-      "url": "http://php.indiana.edu/~livingst/"
-    }
-  ],
-  "database": [
-    {
-      "id": 1,
-      "c_id": 21
-    },
-    {
-      "id": 2,
-      "c_id": 22
-    },
-    {
-      "id": 3,
-      "c_id": 23
-    },
-    {
-      "id": 4,
-      "c_id": 24
-    },
-    {
-      "id": 5,
-      "c_id": 25
-    },
-    {
-      "id": 6,
-      "c_id": 26
-    },
-    {
-      "id": 7,
-      "c_id": 27
-    },
-    {
-      "id": 8,
-      "c_id": 28
-    },
-    {
-      "id": 9,
-      "c_id": 29
-    },
-    {
-      "id": 10,
-      "c_id": 30
-    }
-  ],
-  "reference": [
-    {
-      "id": 1,
-      "c_id": 1,
-      "reference": "doi:10.1007/s00010-006-2843-9"
-    },
-    {
-      "id": 2,
-      "c_id": 2,
-      "reference": "doi:10.1007/s10998-006-0028-x"
-    },
-    {
-      "id": 3,
-      "c_id": 3,
-      "reference": "https://amc-journal.eu/index.php/amc/article/view/204/192"
     },
     {
-      "id": 4,
-      "c_id": 4,
-      "reference": "https://amc-journal.eu/index.php/amc/article/view/204/192"
+      "id": 71,
+      "c_id": 50,
+      "a_id": 62
     },
     {
-      "id": 5,
-      "c_id": 5,
-      "reference": "rg:260908716_Polytopes_Derived_from_Sporadic_Simple_Groups"
+      "id": 72,
+      "c_id": 50,
+      "a_id": 63
     },
     {
-      "id": 6,
-      "c_id": 6,
-      "reference": "doi:10.26493/1855-3974.455.422"
+      "id": 73,
+      "c_id": 50,
+      "a_id": 64
     },
     {
-      "id": 7,
-      "c_id": 9,
-      "reference": "arxiv:1608.04158"
+      "id": 74,
+      "c_id": 51,
+      "a_id": 65
     },
     {
-      "id": 8,
-      "c_id": 10,
-      "reference": "ISBN:0198526504"
+      "id": 75,
+      "c_id": 51,
+      "a_id": 66
     },
     {
-      "id": 9,
-      "c_id": 35,
-      "reference": "doi:10.1112/S1461157014000424"
+      "id": 76,
+      "c_id": 51,
+      "a_id": 67
     },
     {
-      "id": 10,
-      "c_id": 36,
-      "reference": "doi:10.1090/S0025-5718-04-01626-6"
+      "id": 77,
+      "c_id": 52,
+      "a_id": 68
     },
     {
-      "id": 11,
-      "c_id": 18,
-      "reference": "ISBN:9789082750010"
+      "id": 78,
+      "c_id": 52,
+      "a_id": 69
     },
     {
-      "id": 12,
-      "c_id": 44,
-      "reference": "ISBN:9789082750027"
+      "id": 79,
+      "c_id": 52,
+      "a_id": 70
     }
   ],
   "collection": [
@@ -2070,6 +1752,503 @@
       "accessible": null,
       "interoperable": null,
       "reusable": null
+    },
+    {
+      "id": 50,
+      "name": "DistanceRegular.org",
+      "url": "http://www.distanceregular.org/",
+      "object_type": "graph",
+      "number_of_objects": null,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 51,
+      "name": "Distributome",
+      "url": "http://www.distributome.org/",
+      "object_type": "probability distribution",
+      "number_of_objects": null,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    },
+    {
+      "id": 52,
+      "name": "SuiteSparse Matrix Collection",
+      "url": "https://sparse.tamu.edu/",
+      "object_type": "matrix",
+      "number_of_objects": 2833,
+      "number_of_datasets": null,
+      "number_of_contributors": null,
+      "size_compressed": null,
+      "size_uncompressed": null,
+      "time_to_generate": null,
+      "provenance": null,
+      "comment": null,
+      "complete": null,
+      "irredundant": null,
+      "collaborative": null,
+      "decentralised": null,
+      "searchable": null,
+      "selfexplaining": null,
+      "FAIR_summary": null,
+      "findable": null,
+      "accessible": null,
+      "interoperable": null,
+      "reusable": null
+    }
+  ],
+  "author": [
+    {
+      "id": 1,
+      "surname": "Vauthier",
+      "name": "Laurence",
+      "url": null
+    },
+    {
+      "id": 2,
+      "surname": "Leemans",
+      "name": "Dimitri",
+      "url": "http://homepages.ulb.ac.be/~dleemans/"
+    },
+    {
+      "id": 3,
+      "surname": "Hartley",
+      "name": "Michael",
+      "url": "http://dr-mikes-maths.com/maths.html"
+    },
+    {
+      "id": 4,
+      "surname": "Hubard",
+      "name": "Isabel",
+      "url": "https://www.matem.unam.mx/fsd/hubard"
+    },
+    {
+      "id": 5,
+      "surname": "Hulpke",
+      "name": "Alexander",
+      "url": "http://www.math.colostate.edu/~hulpke/"
+    },
+    {
+      "id": 6,
+      "surname": "Connor",
+      "name": "Thomas",
+      "url": null
+    },
+    {
+      "id": 7,
+      "surname": "Malandro",
+      "name": "Martin",
+      "url": "https://www.shsu.edu/mem037/"
+    },
+    {
+      "id": 8,
+      "surname": "Jipsen",
+      "name": "Peter",
+      "url": "http://www1.chapman.edu/~jipsen/"
+    },
+    {
+      "id": 9,
+      "surname": "Kohonen",
+      "name": "Jukka",
+      "url": ""
+    },
+    {
+      "id": 10,
+      "surname": "Potočnik",
+      "name": "Primož",
+      "url": "https://www.fmf.uni-lj.si/~potocnik/work.htm"
+    },
+    {
+      "id": 11,
+      "surname": "Wilson",
+      "name": "Steve",
+      "url": "http://jan.ucc.nau.edu/~swilson/"
+    },
+    {
+      "id": 12,
+      "surname": "Read",
+      "name": "Ronald",
+      "url": null
+    },
+    {
+      "id": 13,
+      "surname": "Wilson",
+      "name": "Robin",
+      "url": null
+    },
+    {
+      "id": 14,
+      "surname": "Jooyandeh",
+      "name": "Reza",
+      "url": null
+    },
+    {
+      "id": 15,
+      "surname": "Pemmaraju",
+      "name": "Sriram",
+      "url": null
+    },
+    {
+      "id": 16,
+      "surname": "Skiena",
+      "name": "Steven",
+      "url": null
+    },
+    {
+      "id": 17,
+      "surname": "Meringer",
+      "name": "Markus",
+      "url": null
+    },
+    {
+      "id": 18,
+      "surname": "Spence",
+      "name": "Ted",
+      "url": null
+    },
+    {
+      "id": 19,
+      "surname": "Rodrigues",
+      "name": "Bernardo",
+      "url": null
+    },
+    {
+      "id": 20,
+      "surname": "Miyamoto",
+      "name": "Izumi",
+      "url": null
+    },
+    {
+      "id": 21,
+      "surname": "Hanaki",
+      "name": "Akihide",
+      "url": null
+    },
+    {
+      "id": 22,
+      "surname": "van Tienhoven",
+      "name": "Chris",
+      "url": null
+    },
+    {
+      "id": 23,
+      "surname": "Allombert",
+      "name": "Bill",
+      "url": null
+    },
+    {
+      "id": 24,
+      "surname": "Schein",
+      "name": "Igor",
+      "url": null
+    },
+    {
+      "id": 25,
+      "surname": "Wilson",
+      "name": "Robert",
+      "url": null
+    },
+    {
+      "id": 26,
+      "surname": "Walsh",
+      "name": "Peter",
+      "url": null
+    },
+    {
+      "id": 27,
+      "surname": "Tripp",
+      "name": "Jonathan",
+      "url": null
+    },
+    {
+      "id": 28,
+      "surname": "Suleiman",
+      "name": "Ibrahim",
+      "url": null
+    },
+    {
+      "id": 29,
+      "surname": "Parker",
+      "name": "Richard",
+      "url": null
+    },
+    {
+      "id": 30,
+      "surname": "Norton",
+      "name": "Simon",
+      "url": null
+    },
+    {
+      "id": 31,
+      "surname": "Nickerson",
+      "name": "Simon",
+      "url": null
+    },
+    {
+      "id": 32,
+      "surname": "Linton",
+      "name": "Steve",
+      "url": null
+    },
+    {
+      "id": 33,
+      "surname": "Bray",
+      "name": "John",
+      "url": null
+    },
+    {
+      "id": 34,
+      "surname": "Abbott",
+      "name": "Rachel",
+      "url": null
+    },
+    {
+      "id": 35,
+      "surname": "Tenner",
+      "name": "Bridget",
+      "url": "http://math.depaul.edu/bridget/"
+    },
+    {
+      "id": 36,
+      "surname": "Freundt",
+      "name": "Sebastian",
+      "url": null
+    },
+    {
+      "id": 37,
+      "surname": "Pauli",
+      "name": "Sebastian",
+      "url": null
+    },
+    {
+      "id": 38,
+      "surname": "Fraatz",
+      "name": "Robert",
+      "url": null
+    },
+    {
+      "id": 39,
+      "surname": "Grout",
+      "name": "Jason",
+      "url": null
+    },
+    {
+      "id": 40,
+      "surname": "Berčič",
+      "name": "Katja",
+      "url": null
+    },
+    {
+      "id": 41,
+      "surname": "Vidali",
+      "name": "Janoš",
+      "url": null
+    },
+    {
+      "id": 42,
+      "surname": "Besche",
+      "name": "Hans Ulrich",
+      "url": null
+    },
+    {
+      "id": 43,
+      "surname": "Eick",
+      "name": "Bettina",
+      "url": null
+    },
+    {
+      "id": 44,
+      "surname": "O'Brien",
+      "name": "Eamonn",
+      "url": null
+    },
+    {
+      "id": 45,
+      "surname": "Kohel",
+      "name": "David",
+      "url": "http://iml.univ-mrs.fr/~kohel/"
+    },
+    {
+      "id": 46,
+      "surname": "Jones",
+      "name": "John",
+      "url": "https://hobbes.la.asu.edu/"
+    },
+    {
+      "id": 47,
+      "surname": "Roberts",
+      "name": "David P.",
+      "url": null
+    },
+    {
+      "id": 48,
+      "surname": "Kaski",
+      "name": "Petteri",
+      "url": null
+    },
+    {
+      "id": 49,
+      "surname": "Östergård",
+      "name": "Patric",
+      "url": "https://users.aalto.fi/~pat/"
+    },
+    {
+      "id": 50,
+      "surname": "Brouwer",
+      "name": "Andries",
+      "url": "https://www.win.tue.nl/~aeb/"
+    },
+    {
+      "id": 51,
+      "surname": "Conder",
+      "name": "Marston",
+      "url": "https://www.math.auckland.ac.nz/~conder/"
+    },
+    {
+      "id": 52,
+      "surname": "Royle",
+      "name": "Gordon",
+      "url": "https://research-repository.uwa.edu.au/en/persons/gordon-royle"
+    },
+    {
+      "id": 53,
+      "surname": "McKay",
+      "name": "Brendan",
+      "url": "http://users.cecs.anu.edu.au/~bdm/"
+    },
+    {
+      "id": 54,
+      "surname": "Wanless",
+      "name": "Ian",
+      "url": "http://users.monash.edu.au/~iwanless/"
+    },
+    {
+      "id": 55,
+      "surname": "Klüners",
+      "name": "Jürgen",
+      "url": "http://www2.math.uni-paderborn.de/people/juergen-klueners.html"
+    },
+    {
+      "id": 56,
+      "surname": "Malle",
+      "name": "Gunter",
+      "url": "http://www.mathematik.uni-kl.de/~malle/en/index.html"
+    },
+    {
+      "id": 57,
+      "surname": "Kimberling",
+      "name": "Clark",
+      "url": "http://faculty.evansville.edu/ck6/"
+    },
+    {
+      "id": 58,
+      "surname": "Gibert",
+      "name": "Bernard",
+      "url": "http://bernard.gibert.pagesperso-orange.fr/index.html"
+    },
+    {
+      "id": 59,
+      "surname": "Hart",
+      "name": "George W.",
+      "url": "http://www.georgehart.com/index.html"
+    },
+    {
+      "id": 60,
+      "surname": "Dobcsányi",
+      "name": "Peter",
+      "url": null
+    },
+    {
+      "id": 61,
+      "surname": "Livingston",
+      "name": "Chuck",
+      "url": "http://php.indiana.edu/~livingst/"
+    },
+    {
+      "id": 62,
+      "surname": "Bailey",
+      "name": "Robert",
+      "url": "http://www2.grenfell.mun.ca/rbailey"
+    },
+    {
+      "id": 63,
+      "surname": "Jackson",
+      "name": "Adam",
+      "url": null
+    },
+    {
+      "id": 64,
+      "surname": "Weir",
+      "name": "Courtney ",
+      "url": null
+    },
+    {
+      "id": 65,
+      "surname": "Dinov",
+      "name": "Ivo",
+      "url": "http://www.socr.umich.edu/people/dinov/"
+    },
+    {
+      "id": 66,
+      "surname": "Pearl",
+      "name": "Dennis",
+      "url": "http://www.stat.osu.edu/~dkp/"
+    },
+    {
+      "id": 67,
+      "surname": "Siegrist ",
+      "name": "Kyle",
+      "url": "http://www.math.uah.edu/~siegrist/"
+    },
+    {
+      "id": 68,
+      "surname": "Davis",
+      "name": "Tim",
+      "url": "http://faculty.cse.tamu.edu/davis"
+    },
+    {
+      "id": 69,
+      "surname": "Hu",
+      "name": "Yifan",
+      "url": "http://yifanhu.net/"
+    },
+    {
+      "id": 70,
+      "surname": "Kolodziej",
+      "name": "Scott",
+      "url": "http://www.scottkolo.com/"
     }
   ]
 }
